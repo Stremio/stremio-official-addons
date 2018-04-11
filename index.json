@@ -21,12 +21,11 @@
                     "id": "top"
                 }
             ],
-            "url": "https://cinemeta.strem.io/stremioget/stremio/v1",
-            "transport": "legacy",
             "idPrefixes": [
                 "tt"
             ]
         },
+        "transportUrl": "https://cinemeta.strem.io/stremioget/stremio/v1",
         "transportName": "legacy",
         "flags": {
             "official": true
@@ -56,12 +55,11 @@
                     "id": "popularities.local"
                 }
             ],
-            "url": "https://channels.strem.io/stremioget/stremio/v1",
-            "transport": "legacy",
             "idPrefixes": [
                 "UC"
             ]
         },
+        "transportUrl": "https://channels.strem.io/stremioget/stremio/v1",
         "transportName": "legacy",
         "flags": {
             "official": true
@@ -89,13 +87,12 @@
                     "id": "popularities.netflix"
                 }
             ],
-            "url": "https://nfxaddon.strem.io/stremioget/stremio/v1",
-            "transport": "legacy",
             "idPrefixes": [
                 "tt",
                 "netflix_id:"
             ]
         },
+        "transportUrl": "https://nfxaddon.strem.io/stremioget/stremio/v1",
         "transportName": "legacy",
         "flags": {
             "official": true
@@ -126,13 +123,12 @@
                     "id": "popularities.guidebox_free"
                 }
             ],
-            "url": "https://watchhub.strem.io/stremioget/stremio/v1",
-            "transport": "legacy",
             "idPrefixes": [
                 "guidebox_id:",
                 "tt"
             ]
         },
+        "transportUrl": "https://watchhub.strem.io/stremioget/stremio/v1",
         "transportName": "legacy",
         "flags": {
             "official": true

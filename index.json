@@ -1,32 +1,8 @@
 [
     {
-        "manifest": {
-            "id": "com.linvo.cinemeta",
-            "name": "Cinemeta",
-            "description": "The official add-on for info from IMDB, TheTVDB, TheMovieDB and Fanart.tv",
-            "resources": [
-                "meta"
-            ],
-            "types": [
-                "series",
-                "movie"
-            ],
-            "catalogs": [
-                {
-                    "type": "series",
-                    "id": "top"
-                },
-                {
-                    "type": "movie",
-                    "id": "top"
-                }
-            ],
-            "idPrefixes": [
-                "tt"
-            ]
-        },
-        "transportUrl": "https://cinemeta.strem.io/stremioget/stremio/v1",
-        "transportName": "legacy",
+        "manifest": {"id":"com.linvo.cinemeta","version":"2.4.0","description":"The official add-on for movie and series catalogs","name":"Cinemeta","resources":["catalog","meta"],"types":["movie","series"],"idProperty":["imdb_id"],"catalogs":[{"type":"movie","id":"top","genres":["Action","Adventure","Animation","Biography","Comedy","Crime","Documentary","Drama","Family","Fantasy","Game-Show","History","Horror","Mystery","Romance","Sci-Fi","Sport","Thriller","War","Western"],"extraSupported":["search","genre"]},{"type":"series","id":"top","genres":["Action","Adventure","Animation","Biography","Comedy","Crime","Documentary","Drama","Family","Fantasy","Game-Show","History","Horror","Mystery","Romance","Sci-Fi","Sport","Thriller","War","Western","Reality-TV","Talk-Show"],"extraSupported":["search","genre"]}]},
+        "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",
+        "transportName": "http",
         "flags": {
             "official": true
         }

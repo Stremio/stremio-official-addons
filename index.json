@@ -8,35 +8,9 @@
         }
     },
     {
-        "manifest": {
-            "id": "com.linvo.stremiochannels",
-            "name": "YouTube",
-            "description": "Watch your favourite YouTube channels ad-free and get notified when they upload new videos.",
-            "logo": "http://www.strem.io/images/addons/youtube-logo.png",
-            "background": "http://img0.mxstatic.com/wallpapers/b00ab97a4504c647bda61f53a6b5bed8_large.jpeg",
-            "resources": [
-                "meta",
-                "stream"
-            ],
-            "types": [
-                "channel"
-            ],
-            "catalogs": [
-                {
-                    "type": "channel",
-                    "id": "popularity"
-                },
-                {
-                    "type": "channel",
-                    "id": "popularities.local"
-                }
-            ],
-            "idPrefixes": [
-                "UC"
-            ]
-        },
-        "transportUrl": "https://channels.strem.io/stremioget/stremio/v1",
-        "transportName": "legacy",
+        "manifest": {"id":"com.linvo.stremiochannels","version":"1.26.0","description":"Watch your favourite YouTube channels ad-free and get notified when they upload new videos.","name":"YouTube","resources":["catalog","meta"],"types":["channel"],"idProperty":["yt_id:"],"catalogs":[{"type":"channel","id":"top","genres":["Animation","Automotive","Beauty & Fashion","Causes & Non-profits","Comedy","Cooking & Health","Film & Entertainment","From TV","Gaming","Lifestyle","Music","News & Politics","Sports"],"extraSupported":["search","genre"]},{"type":"channel","id":"videos","extraRequired":["search"],"extraSupported":["search"]}]},
+        "transportUrl": "https://v3-channels.strem.io/manifest.json",
+        "transportName": "http",
         "flags": {
             "official": true
         }

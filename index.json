@@ -4,7 +4,8 @@
         "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",
         "transportName": "http",
         "flags": {
-            "official": true
+            "official": true,
+            "protected": true
         }
     },
     {

@@ -84,5 +84,26 @@
         "flags": {
             "official": true
         }
+    }, {
+        "manifest": {
+            "id": "org.stremio.opensubtitles",
+            "version": "0.16.2",
+            "name": "OpenSubtitles",
+            "description": "The official add-on for subtitles from OpenSubtitles",
+            "logo": "http://www.strem.io/images/addons/opensubtitles-logo.png",
+            "resources": [
+                "subtitles"
+            ],
+            "types": [
+                "series",
+                "movie"
+            ],
+            "catalogs": []
+        },
+        "transportName": "legacy",
+        "transportUrl": "https://opensubtitles.strem.io/stremio/v1",
+        "flags": {
+            "official": true
+        }
     }
 ]

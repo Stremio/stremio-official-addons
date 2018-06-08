@@ -225,7 +225,9 @@
             "name": "OpenSubtitles",
             "description": "The official add-on for subtitles from OpenSubtitles",
             "logo": "http://www.strem.io/images/addons/opensubtitles-logo.png",
-            "resources": [],
+            "resources": [
+                "subtitles"
+            ],
             "types": [
                 "series",
                 "movie"

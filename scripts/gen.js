@@ -8,7 +8,7 @@ const ENDPOINTS = [
     "https://nfxaddon.strem.io/stremioget/stremio/v1",
     "https://watchhub.strem.io/stremioget/stremio/v1",
     "https://opensubtitles.strem.io/stremio/v1",
-    "http://127.0.0.1:1222/manifest.json",
+    "http://127.0.0.1:11470/local-addon/manifest.json",
 ]
 
 const col = new client.AddonCollection()

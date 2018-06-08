@@ -1,17 +1,150 @@
 [
     {
-        "manifest": {"id":"com.linvo.cinemeta","version":"2.4.0","description":"The official add-on for movie and series catalogs","name":"Cinemeta","resources":["catalog","meta"],"types":["movie","series"],"idProperty":["imdb_id"],"catalogs":[{"type":"movie","id":"top","genres":["Action","Adventure","Animation","Biography","Comedy","Crime","Documentary","Drama","Family","Fantasy","Game-Show","History","Horror","Mystery","Romance","Sci-Fi","Sport","Thriller","War","Western"],"extraSupported":["search","genre"]},{"type":"series","id":"top","genres":["Action","Adventure","Animation","Biography","Comedy","Crime","Documentary","Drama","Family","Fantasy","Game-Show","History","Horror","Mystery","Romance","Sci-Fi","Sport","Thriller","War","Western","Reality-TV","Talk-Show"],"extraSupported":["search","genre"]}]},
-        "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",
+        "manifest": {
+            "id": "com.linvo.cinemeta",
+            "version": "2.4.0",
+            "description": "The official add-on for movie and series catalogs",
+            "name": "Cinemeta",
+            "resources": [
+                "catalog",
+                "meta"
+            ],
+            "types": [
+                "movie",
+                "series"
+            ],
+            "idPrefixes": [
+                "tt"
+            ],
+            "catalogs": [
+                {
+                    "type": "movie",
+                    "id": "top",
+                    "genres": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Biography",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "Game-Show",
+                        "History",
+                        "Horror",
+                        "Mystery",
+                        "Romance",
+                        "Sci-Fi",
+                        "Sport",
+                        "Thriller",
+                        "War",
+                        "Western"
+                    ],
+                    "extraSupported": [
+                        "search",
+                        "genre",
+                        "skip"
+                    ]
+                },
+                {
+                    "type": "series",
+                    "id": "top",
+                    "genres": [
+                        "Action",
+                        "Adventure",
+                        "Animation",
+                        "Biography",
+                        "Comedy",
+                        "Crime",
+                        "Documentary",
+                        "Drama",
+                        "Family",
+                        "Fantasy",
+                        "Game-Show",
+                        "History",
+                        "Horror",
+                        "Mystery",
+                        "Romance",
+                        "Sci-Fi",
+                        "Sport",
+                        "Thriller",
+                        "War",
+                        "Western",
+                        "Reality-TV",
+                        "Talk-Show"
+                    ],
+                    "extraSupported": [
+                        "search",
+                        "genre",
+                        "skip"
+                    ]
+                }
+            ]
+        },
         "transportName": "http",
+        "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",
         "flags": {
             "official": true,
             "protected": true
         }
     },
     {
-        "manifest": {"id":"com.linvo.stremiochannels","version":"1.26.0","description":"Watch your favourite YouTube channels ad-free and get notified when they upload new videos.","name":"YouTube","resources":["catalog","meta"],"types":["channel"],"idProperty":["yt_id:"],"catalogs":[{"type":"channel","id":"top","genres":["Animation","Automotive","Beauty & Fashion","Causes & Non-profits","Comedy","Cooking & Health","Film & Entertainment","From TV","Gaming","Lifestyle","Music","News & Politics","Sports"],"extraSupported":["search","genre"]},{"type":"channel","id":"videos","extraRequired":["search"],"extraSupported":["search"]}]},
-        "transportUrl": "https://v3-channels.strem.io/manifest.json",
+        "manifest": {
+            "id": "com.linvo.stremiochannels",
+            "version": "1.26.0",
+            "description": "Watch your favourite YouTube channels ad-free and get notified when they upload new videos.",
+            "name": "YouTube",
+            "resources": [
+                "catalog",
+                "meta"
+            ],
+            "types": [
+                "channel"
+            ],
+            "idPrefixes": [
+                "yt_id:"
+            ],
+            "catalogs": [
+                {
+                    "type": "channel",
+                    "id": "top",
+                    "genres": [
+                        "Animation",
+                        "Automotive",
+                        "Beauty & Fashion",
+                        "Causes & Non-profits",
+                        "Comedy",
+                        "Cooking & Health",
+                        "Film & Entertainment",
+                        "From TV",
+                        "Gaming",
+                        "Lifestyle",
+                        "Music",
+                        "News & Politics",
+                        "Sports"
+                    ],
+                    "extraSupported": [
+                        "search",
+                        "genre",
+                        "skip"
+                    ]
+                },
+                {
+                    "type": "channel",
+                    "id": "videos",
+                    "extraRequired": [
+                        "search"
+                    ],
+                    "extraSupported": [
+                        "search"
+                    ]
+                }
+            ]
+        },
         "transportName": "http",
+        "transportUrl": "https://v3-channels.strem.io/manifest.json",
         "flags": {
             "official": true
         }
@@ -19,6 +152,7 @@
     {
         "manifest": {
             "id": "org.stremio.netflix",
+            "version": "1.3.0",
             "name": "Netflix",
             "description": "Watch Netflix movies and series",
             "resources": [
@@ -31,11 +165,13 @@
             "catalogs": [
                 {
                     "type": "movie",
-                    "id": "popularities.netflix"
+                    "id": "popularities.netflix",
+                    "name": "Netflix"
                 },
                 {
                     "type": "series",
-                    "id": "popularities.netflix"
+                    "id": "popularities.netflix",
+                    "name": "Netflix"
                 }
             ],
             "idPrefixes": [
@@ -43,8 +179,8 @@
                 "netflix_id:"
             ]
         },
-        "transportUrl": "https://nfxaddon.strem.io/stremioget/stremio/v1",
         "transportName": "legacy",
+        "transportUrl": "https://nfxaddon.strem.io/stremioget/stremio/v1",
         "flags": {
             "official": true
         }
@@ -52,12 +188,12 @@
     {
         "manifest": {
             "id": "org.stremio.guidebox",
+            "version": "1.13.5",
             "name": "WatchHub",
             "description": "Find where to stream your favorite movies and shows amongst iTunes, Hulu, Amazon and other UK/US services.",
             "contactEmail": "office@strem.io",
             "logo": "http://www.strem.io/images/watchhub-logo.png",
             "resources": [
-                "meta",
                 "stream"
             ],
             "types": [
@@ -66,12 +202,9 @@
             ],
             "catalogs": [
                 {
-                    "type": "channel",
-                    "id": "popularities.guidebox"
-                },
-                {
                     "type": "movie",
-                    "id": "popularities.guidebox_free"
+                    "id": "popularities.guidebox_free",
+                    "name": "FREE"
                 }
             ],
             "idPrefixes": [
@@ -79,21 +212,20 @@
                 "tt"
             ]
         },
-        "transportUrl": "https://watchhub.strem.io/stremioget/stremio/v1",
         "transportName": "legacy",
+        "transportUrl": "https://watchhub.strem.io/stremioget/stremio/v1",
         "flags": {
             "official": true
         }
-    }, {
+    },
+    {
         "manifest": {
             "id": "org.stremio.opensubtitles",
-            "version": "0.16.2",
+            "version": "0.17.2",
             "name": "OpenSubtitles",
             "description": "The official add-on for subtitles from OpenSubtitles",
             "logo": "http://www.strem.io/images/addons/opensubtitles-logo.png",
-            "resources": [
-                "subtitles"
-            ],
+            "resources": [],
             "types": [
                 "series",
                 "movie"
@@ -102,6 +234,38 @@
         },
         "transportName": "legacy",
         "transportUrl": "https://opensubtitles.strem.io/stremio/v1",
+        "flags": {
+            "official": true
+        }
+    },
+    {
+        "manifest": {
+            "id": "org.stremio.local",
+            "version": "1.1.0",
+            "description": "Local add-on to find playable files: .torrent, .mp4, .mkv and .avi",
+            "name": "Local Files",
+            "resources": [
+                "catalog",
+                "meta"
+            ],
+            "types": [
+                "movie",
+                "series",
+                "other"
+            ],
+            "idPrefixes": [
+                "bt:",
+                "local:"
+            ],
+            "catalogs": [
+                {
+                    "type": "other",
+                    "id": "local"
+                }
+            ]
+        },
+        "transportName": "http",
+        "transportUrl": "http://127.0.0.1:11470/local-addon/manifest.json",
         "flags": {
             "official": true
         }

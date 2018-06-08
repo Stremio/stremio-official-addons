@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Stremio/stremio-official-addons/issues"
   },
-  "homepage": "https://github.com/Stremio/stremio-official-addons#readme"
+  "homepage": "https://github.com/Stremio/stremio-official-addons#readme",
+  "devDependencies": {
+    "stremio-addon-client": "^1.5.1"
+  }
 }

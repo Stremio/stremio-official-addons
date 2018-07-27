@@ -201,7 +201,8 @@
         "transportName": "legacy",
         "transportUrl": "https://opensubtitles.strem.io/stremio/v1",
         "flags": {
-            "official": true
+            "official": true,
+	    "protected": true
         }
     },
     {

@@ -234,7 +234,8 @@
         "transportName": "http",
         "transportUrl": "http://127.0.0.1:11470/local-addon/manifest.json",
         "flags": {
-            "official": true
+            "official": true,
+	    "protected": true
         }
     }
 ]

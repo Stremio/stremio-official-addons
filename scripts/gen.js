@@ -5,7 +5,6 @@ const client = require('stremio-addon-client')
 const ENDPOINTS = [
     "https://v3-cinemeta.strem.io/manifest.json",
     "https://v3-channels.strem.io/manifest.json",
-    "https://nfxaddon.strem.io/stremioget/stremio/v1",
     "https://watchhub.strem.io/stremioget/stremio/v1",
     "https://opensubtitles.strem.io/stremio/v1",
     "http://127.0.0.1:11470/local-addon/manifest.json",

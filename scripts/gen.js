@@ -16,10 +16,18 @@ Promise.all(ENDPOINTS.map(url => client.detectFromURL(url)))
 .then(function(responses) {
     responses.forEach(function(x, i) {
        if (!x.addon) return
-        x.addon.flags = i === 0 ? { official: true, protected: true } : { official: true }
+        x.addon.flags = isProtected(x, i) ? { official: true, protected: true } : { official: true }
         col.add(x.addon)
     })
 })
 .then(function() {
     console.log(JSON.stringify(col.save(), null, 4))
 })
+
+function isProtected(x, i) {
+	// cinemeta
+	if (i === 0) return true
+
+	// local
+	if (x.addon.manifest.id.match('local')) return true
+}

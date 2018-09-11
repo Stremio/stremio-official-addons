@@ -16,6 +16,7 @@ Promise.all(ENDPOINTS.map(url => client.detectFromURL(url)))
 .then(function(responses) {
     responses.forEach(function(x, i) {
        if (!x.addon) return
+	if (JSON.stringify(x.addon.manifest).length > 8192) throw 'manifest bigger than 8kb - aborting!'
         x.addon.flags = isProtected(x, i) ? { official: true, protected: true } : { official: true }
         col.add(x.addon)
     })

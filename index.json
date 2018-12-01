@@ -273,33 +273,30 @@
     },
     {
         "manifest": {
-            "id": "org.stremio.guidebox",
-            "version": "1.13.5",
             "name": "WatchHub",
-            "description": "Find where to stream your favorite movies and shows amongst iTunes, Hulu, Amazon and other UK/US services.",
-            "contactEmail": "office@strem.io",
+            "description": "Find where to stream your favorite movies and shows amongst iTunes, Hulu, Amazon and many other UK / US services.",
+            "tag": "watchhub",
             "logo": "http://www.strem.io/images/watchhub-logo.png",
+            "useExtractor": true,
+            "version": "1.14.0",
+            "alternativeUpdater": "reelgood",
+            "types": [
+                "series",
+                "movie"
+            ],
+            "idProperty": "imdb_id",
+            "idPrefixes": [
+                "tt"
+            ],
             "resources": [
                 "stream"
             ],
-            "types": [
-                "movie",
-                "series"
-            ],
-            "catalogs": [
-                {
-                    "type": "movie",
-                    "id": "popularities.guidebox_free",
-                    "name": "FREE"
-                }
-            ],
-            "idPrefixes": [
-                "guidebox_id:",
-                "tt"
-            ]
+            "isFree": true,
+            "id": "org.stremio.watchhub",
+            "icon": "http://www.strem.io/images/watchhub-logo.png"
         },
-        "transportName": "legacy",
-        "transportUrl": "https://watchhub.strem.io/stremioget/stremio/v1",
+        "transportName": "http",
+        "transportUrl": "https://watchhub.strem.io/manifest.json",
         "flags": {
             "official": true
         }

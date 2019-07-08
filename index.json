@@ -2,7 +2,7 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "version": "2.8.1",
+            "version": "2.11.0",
             "description": "The official add-on for movie and series catalogs",
             "name": "Cinemeta",
             "resources": [
@@ -87,6 +87,7 @@
                     "type": "movie",
                     "id": "year",
                     "genres": [
+                        "2019",
                         "2018",
                         "2017",
                         "2016",
@@ -100,8 +101,7 @@
                         "2008",
                         "2007",
                         "2006",
-                        "2005",
-                        "2004"
+                        "2005"
                     ],
                     "extraSupported": [
                         "genre"
@@ -115,6 +115,7 @@
                     "type": "series",
                     "id": "year",
                     "genres": [
+                        "2019",
                         "2018",
                         "2017",
                         "2016",
@@ -128,8 +129,7 @@
                         "2008",
                         "2007",
                         "2006",
-                        "2005",
-                        "2004"
+                        "2005"
                     ],
                     "extraSupported": [
                         "genre"
@@ -215,7 +215,7 @@
     {
         "manifest": {
             "id": "com.linvo.stremiochannels",
-            "version": "1.30.4",
+            "version": "1.30.5",
             "description": "Watch your favourite YouTube channels ad-free and get notified when they upload new videos.",
             "name": "YouTube",
             "resources": [
@@ -273,27 +273,22 @@
     },
     {
         "manifest": {
+            "id": "org.stremio.watchhub",
+            "logo": "https://www.strem.io/images/watchhub-logo.png",
+            "version": "1.15.0",
             "name": "WatchHub",
-            "description": "Find where to stream your favorite movies and shows amongst iTunes, Hulu, Amazon and many other UK / US services.",
-            "tag": "watchhub",
-            "logo": "http://www.strem.io/images/watchhub-logo.png",
-            "useExtractor": true,
-            "version": "1.14.0",
-            "alternativeUpdater": "reelgood",
-            "types": [
-                "series",
-                "movie"
-            ],
-            "idProperty": "imdb_id",
-            "idPrefixes": [
-                "tt"
-            ],
+            "description": "Find where to stream your favorite movies and shows amongst Netflix, iTunes, Hulu, Amazon, HBO GO and many others. Supports many countries.",
             "resources": [
                 "stream"
             ],
-            "isFree": true,
-            "id": "org.stremio.watchhub",
-            "icon": "http://www.strem.io/images/watchhub-logo.png"
+            "types": [
+                "movie",
+                "series"
+            ],
+            "catalogs": [],
+            "idPrefixes": [
+                "tt"
+            ]
         },
         "transportName": "http",
         "transportUrl": "https://watchhub.strem.io/manifest.json",
@@ -304,7 +299,7 @@
     {
         "manifest": {
             "id": "org.stremio.opensubtitles",
-            "version": "0.17.4",
+            "version": "0.22.0",
             "name": "OpenSubtitles",
             "description": "The official add-on for subtitles from OpenSubtitles",
             "logo": "http://www.strem.io/images/addons/opensubtitles-logo.png",
@@ -313,7 +308,8 @@
             ],
             "types": [
                 "series",
-                "movie"
+                "movie",
+                "other"
             ],
             "catalogs": []
         },
@@ -326,7 +322,7 @@
     {
         "manifest": {
             "id": "org.stremio.local",
-            "version": "1.8.5",
+            "version": "1.9.1",
             "description": "Local add-on to find playable files: .torrent, .mp4, .mkv and .avi",
             "name": "Local Files",
             "resources": [

@@ -298,6 +298,44 @@
     },
     {
         "manifest": {
+            "id": "org.stremio.pubdomainmovies",
+            "version": "1.0.0",
+            "logo": "https://publicdomainmovies.now.sh/logo.jpg",
+            "name": "Public Domain Movies",
+            "description": "Torrents for public domain movies. Includes a collection of more then 500 public domain movies.",
+            "resources": [
+                "catalog",
+                "stream"
+            ],
+            "types": [
+                "movie"
+            ],
+            "catalogs": [
+                {
+                    "type": "movie",
+                    "id": "publicdomainmovies",
+                    "extra": [
+                        {
+                            "name": "skip"
+                        },
+                        {
+                            "name": "search"
+                        }
+                    ]
+                }
+            ],
+            "idPrefixes": [
+                "tt"
+            ]
+        },
+        "transportName": "http",
+        "transportUrl": "https://caching.stremio.net/publicdomainmovies.now.sh/manifest.json",
+        "flags": {
+            "official": true
+        }
+    },
+    {
+        "manifest": {
             "id": "org.stremio.opensubtitles",
             "version": "0.22.0",
             "name": "OpenSubtitles",

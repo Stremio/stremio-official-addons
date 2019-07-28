@@ -2,7 +2,7 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "version": "2.11.0",
+            "version": "2.12.0",
             "description": "The official add-on for movie and series catalogs",
             "name": "Cinemeta",
             "resources": [
@@ -202,6 +202,13 @@
                         "skip"
                     ],
                     "name": "By rating"
+                },
+                {
+                        "type": "series",
+                        "id": "last-videos",
+                        "extraSupported": ["lastVideosIds"],
+                        "extraRequired": ["lastVideosIds"],
+                        "name": "Last videos"
                 }
             ]
         },

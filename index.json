@@ -2,12 +2,13 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "version": "2.12.0",
+            "version": "2.13.0",
             "description": "The official add-on for movie and series catalogs",
             "name": "Cinemeta",
             "resources": [
                 "catalog",
-                "meta"
+                "meta",
+                "addon_catalog"
             ],
             "types": [
                 "movie",
@@ -15,6 +16,53 @@
             ],
             "idPrefixes": [
                 "tt"
+            ],
+            "addonCatalogs": [
+                {
+                    "type": "movie",
+                    "id": "thirdparty",
+                    "name": "Third-party"
+                },
+                {
+                    "type": "series",
+                    "id": "thirdparty",
+                    "name": "Third-party"
+                },
+                {
+                    "type": "channel",
+                    "id": "thirdparty",
+                    "name": "Third-party"
+                },
+                {
+                    "type": "tv",
+                    "id": "thirdparty",
+                    "name": "Third-party"
+                },
+                {
+                    "type": "Podcasts",
+                    "id": "thirdparty",
+                    "name": "Third-party"
+                },
+                {
+                    "type": "other",
+                    "id": "thirdparty",
+                    "name": "Third-party"
+                },
+                {
+                    "type": "movie",
+                    "id": "official",
+                    "name": "Official"
+                },
+                {
+                    "type": "series",
+                    "id": "official",
+                    "name": "Official"
+                },
+                {
+                    "type": "channel",
+                    "id": "official",
+                    "name": "Official"
+                }
             ],
             "catalogs": [
                 {
@@ -103,6 +151,29 @@
                         "2006",
                         "2005"
                     ],
+                    "extra": [
+                        {
+                            "name": "genre",
+                            "options": [
+                                "2019",
+                                "2018",
+                                "2017",
+                                "2016",
+                                "2015",
+                                "2014",
+                                "2013",
+                                "2012",
+                                "2011",
+                                "2010",
+                                "2009",
+                                "2008",
+                                "2007",
+                                "2006",
+                                "2005"
+                            ],
+                            "isRequired": true
+                        }
+                    ],
                     "extraSupported": [
                         "genre"
                     ],
@@ -130,6 +201,29 @@
                         "2007",
                         "2006",
                         "2005"
+                    ],
+                    "extra": [
+                        {
+                            "name": "genre",
+                            "options": [
+                                "2019",
+                                "2018",
+                                "2017",
+                                "2016",
+                                "2015",
+                                "2014",
+                                "2013",
+                                "2012",
+                                "2011",
+                                "2010",
+                                "2009",
+                                "2008",
+                                "2007",
+                                "2006",
+                                "2005"
+                            ],
+                            "isRequired": true
+                        }
                     ],
                     "extraSupported": [
                         "genre"
@@ -204,11 +298,15 @@
                     "name": "By rating"
                 },
                 {
-                        "type": "series",
-                        "id": "last-videos",
-                        "extraSupported": ["lastVideosIds"],
-                        "extraRequired": ["lastVideosIds"],
-                        "name": "Last videos"
+                    "type": "series",
+                    "id": "last-videos",
+                    "extraSupported": [
+                        "lastVideosIds"
+                    ],
+                    "extraRequired": [
+                        "lastVideosIds"
+                    ],
+                    "name": "Last videos"
                 }
             ]
         },

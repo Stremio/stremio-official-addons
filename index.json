@@ -2,54 +2,232 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "version": "2.13.0",
-            "description": "The official add-on for movie and series catalogs",
             "name": "Cinemeta",
+            "version": "3.0.0",
+            "description": "The official add-on for movie and series catalogs",
+            "types": [
+                "movie",
+                "series"
+            ],
             "resources": [
                 "catalog",
                 "meta",
                 "addon_catalog"
             ],
-            "types": [
-                "movie",
-                "series"
-            ],
             "idPrefixes": [
                 "tt"
+            ],
+            "catalogs": [
+                {
+                    "id": "top",
+                    "type": "movie",
+                    "name": "Top",
+                    "extra": [
+                        {
+                            "name": "genre",
+                            "options": [
+                                "Action",
+                                "Adventure",
+                                "Animation",
+                                "Biography",
+                                "Comedy",
+                                "Crime",
+                                "Documentary",
+                                "Drama",
+                                "Family",
+                                "Fantasy",
+                                "Game-Show",
+                                "History",
+                                "Horror",
+                                "Mystery",
+                                "Romance",
+                                "Sci-Fi",
+                                "Sport",
+                                "Thriller",
+                                "War",
+                                "Western"
+                            ]
+                        },
+                        {
+                            "name": "search"
+                        },
+                        {
+                            "name": "skip"
+                        }
+                    ]
+                },
+                {
+                    "id": "top",
+                    "type": "series",
+                    "name": "Top",
+                    "extra": [
+                        {
+                            "name": "genre",
+                            "options": [
+                                "Action",
+                                "Adventure",
+                                "Animation",
+                                "Biography",
+                                "Comedy",
+                                "Crime",
+                                "Documentary",
+                                "Drama",
+                                "Family",
+                                "Fantasy",
+                                "Game-Show",
+                                "History",
+                                "Horror",
+                                "Mystery",
+                                "Romance",
+                                "Sci-Fi",
+                                "Sport",
+                                "Thriller",
+                                "War",
+                                "Western",
+                                "Reality-TV",
+                                "Talk-Show"
+                            ]
+                        },
+                        {
+                            "name": "search"
+                        },
+                        {
+                            "name": "skip"
+                        }
+                    ]
+                },
+                {
+                    "id": "year",
+                    "type": "movie",
+                    "name": "By year",
+                    "extra": [
+                        {
+                            "name": "year",
+                            "isRequired": true,
+                            "options": [
+                                "2020",
+                                "2019",
+                                "2018",
+                                "2017",
+                                "2016",
+                                "2015",
+                                "2014",
+                                "2013",
+                                "2012",
+                                "2011",
+                                "2010",
+                                "2009",
+                                "2008",
+                                "2007",
+                                "2006"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "year",
+                    "type": "series",
+                    "name": "By year",
+                    "extra": [
+                        {
+                            "name": "year",
+                            "isRequired": true,
+                            "options": [
+                                "2020",
+                                "2019",
+                                "2018",
+                                "2017",
+                                "2016",
+                                "2015",
+                                "2014",
+                                "2013",
+                                "2012",
+                                "2011",
+                                "2010",
+                                "2009",
+                                "2008",
+                                "2007",
+                                "2006"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "imdbRating",
+                    "type": "movie",
+                    "name": "By rating",
+                    "extra": [
+                        {
+                            "name": "genre",
+                            "options": [
+                                "Action",
+                                "Adventure",
+                                "Animation",
+                                "Biography",
+                                "Comedy",
+                                "Crime",
+                                "Documentary",
+                                "Drama",
+                                "Family",
+                                "Fantasy",
+                                "Game-Show",
+                                "History",
+                                "Horror",
+                                "Mystery",
+                                "Romance",
+                                "Sci-Fi",
+                                "Sport",
+                                "Thriller",
+                                "War",
+                                "Western"
+                            ]
+                        },
+                        {
+                            "name": "skip"
+                        }
+                    ]
+                },
+                {
+                    "id": "imdbRating",
+                    "type": "series",
+                    "name": "By rating",
+                    "extra": [
+                        {
+                            "name": "genre",
+                            "options": [
+                                "Action",
+                                "Adventure",
+                                "Animation",
+                                "Biography",
+                                "Comedy",
+                                "Crime",
+                                "Documentary",
+                                "Drama",
+                                "Family",
+                                "Fantasy",
+                                "Game-Show",
+                                "History",
+                                "Horror",
+                                "Mystery",
+                                "Romance",
+                                "Sci-Fi",
+                                "Sport",
+                                "Thriller",
+                                "War",
+                                "Western",
+                                "Reality-TV",
+                                "Talk-Show"
+                            ]
+                        },
+                        {
+                            "name": "skip"
+                        }
+                    ]
+                }
             ],
             "addonCatalogs": [
                 {
                     "type": "movie",
-                    "id": "thirdparty",
-                    "name": "Third-party"
-                },
-                {
-                    "type": "series",
-                    "id": "thirdparty",
-                    "name": "Third-party"
-                },
-                {
-                    "type": "channel",
-                    "id": "thirdparty",
-                    "name": "Third-party"
-                },
-                {
-                    "type": "tv",
-                    "id": "thirdparty",
-                    "name": "Third-party"
-                },
-                {
-                    "type": "Podcasts",
-                    "id": "thirdparty",
-                    "name": "Third-party"
-                },
-                {
-                    "type": "other",
-                    "id": "thirdparty",
-                    "name": "Third-party"
-                },
-                {
-                    "type": "movie",
                     "id": "official",
                     "name": "Official"
                 },
@@ -57,454 +235,11 @@
                     "type": "series",
                     "id": "official",
                     "name": "Official"
-                },
-                {
-                    "type": "channel",
-                    "id": "official",
-                    "name": "Official"
-                }
-            ],
-            "catalogs": [
-                {
-                    "type": "movie",
-                    "id": "top",
-                    "genres": [
-                        "Action",
-                        "Adventure",
-                        "Animation",
-                        "Biography",
-                        "Comedy",
-                        "Crime",
-                        "Documentary",
-                        "Drama",
-                        "Family",
-                        "Fantasy",
-                        "Game-Show",
-                        "History",
-                        "Horror",
-                        "Mystery",
-                        "Romance",
-                        "Sci-Fi",
-                        "Sport",
-                        "Thriller",
-                        "War",
-                        "Western"
-                    ],
-                    "extraSupported": [
-                        "search",
-                        "genre",
-                        "skip"
-                    ],
-                    "name": "Top"
-                },
-                {
-                    "type": "series",
-                    "id": "top",
-                    "genres": [
-                        "Action",
-                        "Adventure",
-                        "Animation",
-                        "Biography",
-                        "Comedy",
-                        "Crime",
-                        "Documentary",
-                        "Drama",
-                        "Family",
-                        "Fantasy",
-                        "Game-Show",
-                        "History",
-                        "Horror",
-                        "Mystery",
-                        "Romance",
-                        "Sci-Fi",
-                        "Sport",
-                        "Thriller",
-                        "War",
-                        "Western",
-                        "Reality-TV",
-                        "Talk-Show"
-                    ],
-                    "extraSupported": [
-                        "search",
-                        "genre",
-                        "skip"
-                    ],
-                    "name": "Top"
-                },
-                {
-                    "type": "movie",
-                    "id": "year",
-                    "genres": [
-                        "2019",
-                        "2018",
-                        "2017",
-                        "2016",
-                        "2015",
-                        "2014",
-                        "2013",
-                        "2012",
-                        "2011",
-                        "2010",
-                        "2009",
-                        "2008",
-                        "2007",
-                        "2006",
-                        "2005"
-                    ],
-                    "extra": [
-                        {
-                            "name": "genre",
-                            "options": [
-                                "2019",
-                                "2018",
-                                "2017",
-                                "2016",
-                                "2015",
-                                "2014",
-                                "2013",
-                                "2012",
-                                "2011",
-                                "2010",
-                                "2009",
-                                "2008",
-                                "2007",
-                                "2006",
-                                "2005"
-                            ],
-                            "isRequired": true
-                        }
-                    ],
-                    "extraSupported": [
-                        "genre"
-                    ],
-                    "extraRequired": [
-                        "genre"
-                    ],
-                    "name": "By year"
-                },
-                {
-                    "type": "series",
-                    "id": "year",
-                    "genres": [
-                        "2019",
-                        "2018",
-                        "2017",
-                        "2016",
-                        "2015",
-                        "2014",
-                        "2013",
-                        "2012",
-                        "2011",
-                        "2010",
-                        "2009",
-                        "2008",
-                        "2007",
-                        "2006",
-                        "2005"
-                    ],
-                    "extra": [
-                        {
-                            "name": "genre",
-                            "options": [
-                                "2019",
-                                "2018",
-                                "2017",
-                                "2016",
-                                "2015",
-                                "2014",
-                                "2013",
-                                "2012",
-                                "2011",
-                                "2010",
-                                "2009",
-                                "2008",
-                                "2007",
-                                "2006",
-                                "2005"
-                            ],
-                            "isRequired": true
-                        }
-                    ],
-                    "extraSupported": [
-                        "genre"
-                    ],
-                    "extraRequired": [
-                        "genre"
-                    ],
-                    "name": "By year"
-                },
-                {
-                    "type": "movie",
-                    "id": "imdbRating",
-                    "genres": [
-                        "Action",
-                        "Adventure",
-                        "Animation",
-                        "Biography",
-                        "Comedy",
-                        "Crime",
-                        "Documentary",
-                        "Drama",
-                        "Family",
-                        "Fantasy",
-                        "Game-Show",
-                        "History",
-                        "Horror",
-                        "Mystery",
-                        "Romance",
-                        "Sci-Fi",
-                        "Sport",
-                        "Thriller",
-                        "War",
-                        "Western"
-                    ],
-                    "extraSupported": [
-                        "genre",
-                        "skip"
-                    ],
-                    "name": "By rating"
-                },
-                {
-                    "type": "series",
-                    "id": "imdbRating",
-                    "genres": [
-                        "Action",
-                        "Adventure",
-                        "Animation",
-                        "Biography",
-                        "Comedy",
-                        "Crime",
-                        "Documentary",
-                        "Drama",
-                        "Family",
-                        "Fantasy",
-                        "Game-Show",
-                        "History",
-                        "Horror",
-                        "Mystery",
-                        "Romance",
-                        "Sci-Fi",
-                        "Sport",
-                        "Thriller",
-                        "War",
-                        "Western",
-                        "Reality-TV",
-                        "Talk-Show"
-                    ],
-                    "extraSupported": [
-                        "genre",
-                        "skip"
-                    ],
-                    "name": "By rating"
-                },
-                {
-                    "type": "series",
-                    "id": "last-videos",
-                    "extraSupported": [
-                        "lastVideosIds"
-                    ],
-                    "extraRequired": [
-                        "lastVideosIds"
-                    ],
-                    "name": "Last videos"
                 }
             ]
         },
         "transportName": "http",
-        "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",
-        "flags": {
-            "official": true,
-            "protected": true
-        }
-    },
-    {
-        "manifest": {
-            "id": "com.linvo.stremiochannels",
-            "version": "1.30.5",
-            "description": "Watch your favourite YouTube channels ad-free and get notified when they upload new videos.",
-            "name": "YouTube",
-            "resources": [
-                "catalog",
-                "meta"
-            ],
-            "types": [
-                "channel"
-            ],
-            "idPrefixes": [
-                "yt_id:"
-            ],
-            "catalogs": [
-                {
-                    "type": "channel",
-                    "id": "top",
-                    "genres": [
-                        "Animation",
-                        "Automotive",
-                        "Beauty & Fashion",
-                        "Causes & Non-profits",
-                        "Comedy",
-                        "Cooking & Health",
-                        "Film & Entertainment",
-                        "From TV",
-                        "Gaming",
-                        "Lifestyle",
-                        "Music",
-                        "News & Politics",
-                        "Sports"
-                    ],
-                    "extraSupported": [
-                        "search",
-                        "genre",
-                        "skip"
-                    ]
-                },
-                {
-                    "type": "channel",
-                    "id": "videos",
-                    "extraRequired": [
-                        "search"
-                    ],
-                    "extraSupported": [
-                        "search"
-                    ]
-                }
-            ]
-        },
-        "transportName": "http",
-        "transportUrl": "https://v3-channels.strem.io/manifest.json",
-        "flags": {
-            "official": true
-        }
-    },
-    {
-        "manifest": {
-            "id": "org.stremio.watchhub",
-            "logo": "https://www.strem.io/images/watchhub-logo.png",
-            "version": "1.15.0",
-            "name": "WatchHub",
-            "description": "Find where to stream your favorite movies and shows amongst Netflix, iTunes, Hulu, Amazon, HBO GO and many others. Supports many countries.",
-            "resources": [
-                "stream"
-            ],
-            "types": [
-                "movie",
-                "series"
-            ],
-            "catalogs": [],
-            "idPrefixes": [
-                "tt"
-            ]
-        },
-        "transportName": "http",
-        "transportUrl": "https://watchhub.strem.io/manifest.json",
-        "flags": {
-            "official": true
-        }
-    },
-    {
-        "manifest": {
-            "id": "org.stremio.pubdomainmovies",
-            "version": "1.0.0",
-            "logo": "https://johnserv531.github.io/gh-images/1586344884.jpg",
-            "name": "Public Domain Movies",
-            "description": "Torrents for public domain movies. Includes a collection of more then 500 public domain movies.",
-            "resources": [
-                "catalog",
-                "stream"
-            ],
-            "types": [
-                "movie"
-            ],
-            "catalogs": [
-                {
-                    "type": "movie",
-                    "id": "publicdomainmovies",
-                    "extra": [
-                        {
-                            "name": "skip"
-                        },
-                        {
-                            "name": "search"
-                        }
-                    ]
-                }
-            ],
-            "idPrefixes": [
-                "tt"
-            ]
-        },
-        "transportName": "http",
-        "transportUrl": "https://caching.stremio.net/publicdomainmovies.now.sh/manifest.json",
-        "flags": {
-            "official": true
-        }
-    },
-    {
-        "manifest": {
-            "id": "org.stremio.opensubtitles",
-            "version": "0.22.0",
-            "name": "OpenSubtitles",
-            "description": "The official add-on for subtitles from OpenSubtitles",
-            "logo": "http://www.strem.io/images/addons/opensubtitles-logo.png",
-            "resources": [
-                "subtitles"
-            ],
-            "types": [
-                "series",
-                "movie",
-                "other"
-            ],
-            "catalogs": []
-        },
-        "transportName": "legacy",
-        "transportUrl": "https://opensubtitles.strem.io/stremio/v1",
-        "flags": {
-            "official": true
-        }
-    },
-    {
-        "manifest": {
-            "id": "org.stremio.local",
-            "version": "1.9.1",
-            "description": "Local add-on to find playable files: .torrent, .mp4, .mkv and .avi",
-            "name": "Local Files",
-            "resources": [
-                "catalog",
-                {
-                    "name": "meta",
-                    "types": [
-                        "other"
-                    ],
-                    "idPrefixes": [
-                        "local:",
-                        "bt:"
-                    ]
-                },
-                {
-                    "name": "stream",
-                    "types": [
-                        "movie",
-                        "series"
-                    ],
-                    "idPrefixes": [
-                        "tt"
-                    ]
-                }
-            ],
-            "types": [
-                "movie",
-                "series",
-                "other"
-            ],
-            "catalogs": [
-                {
-                    "type": "other",
-                    "id": "local"
-                }
-            ]
-        },
-        "transportName": "http",
-        "transportUrl": "http://127.0.0.1:11470/local-addon/manifest.json",
+        "transportUrl": "http://v4-cinemeta.strem.io/manifest.json",
         "flags": {
             "official": true,
             "protected": true

@@ -238,8 +238,7 @@
                 }
             ]
         },
-        "transportName": "http",
-        "transportUrl": "http://v4-cinemeta.strem.io/manifest.json",
+        "transportUrl": "https://v4-cinemeta.strem.io/manifest.json",
         "flags": {
             "official": true,
             "protected": true

@@ -19,9 +19,10 @@
         "stremio"
     ],
     "scripts": {
-        "generate": "node ./scripts/gen.js"
+        "build": "node ./scripts/build.js"
     },
     "devDependencies": {
-        "stremio-addon-client": "^1.5.2"
+        "@stremio/stremio-core-validator": "0.4.0",
+        "node-fetch": "2.6.1"
     }
 }

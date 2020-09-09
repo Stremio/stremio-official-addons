@@ -22,7 +22,7 @@
         "build": "node ./scripts/build.js"
     },
     "devDependencies": {
-        "@stremio/stremio-core-validator": "0.4.0",
+        "@stremio/stremio-core-validator": "0.5.0",
         "node-fetch": "2.6.1"
     }
 }

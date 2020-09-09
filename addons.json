@@ -2,9 +2,12 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "name": "Cinemeta",
             "version": "3.0.0",
+            "name": "Cinemeta",
+            "contactEmail": null,
             "description": "The official add-on for movie and series catalogs",
+            "logo": null,
+            "background": null,
             "types": [
                 "movie",
                 "series"
@@ -19,12 +22,13 @@
             ],
             "catalogs": [
                 {
-                    "id": "top",
                     "type": "movie",
+                    "id": "top",
                     "name": "Top",
                     "extra": [
                         {
                             "name": "genre",
+                            "isRequired": false,
                             "options": [
                                 "Action",
                                 "Adventure",
@@ -46,23 +50,31 @@
                                 "Thriller",
                                 "War",
                                 "Western"
-                            ]
+                            ],
+                            "optionsLimit": 0
                         },
                         {
-                            "name": "search"
+                            "name": "search",
+                            "isRequired": false,
+                            "options": null,
+                            "optionsLimit": 0
                         },
                         {
-                            "name": "skip"
+                            "name": "skip",
+                            "isRequired": false,
+                            "options": null,
+                            "optionsLimit": 0
                         }
                     ]
                 },
                 {
-                    "id": "top",
                     "type": "series",
+                    "id": "top",
                     "name": "Top",
                     "extra": [
                         {
                             "name": "genre",
+                            "isRequired": false,
                             "options": [
                                 "Action",
                                 "Adventure",
@@ -86,19 +98,26 @@
                                 "Western",
                                 "Reality-TV",
                                 "Talk-Show"
-                            ]
+                            ],
+                            "optionsLimit": 0
                         },
                         {
-                            "name": "search"
+                            "name": "search",
+                            "isRequired": false,
+                            "options": null,
+                            "optionsLimit": 0
                         },
                         {
-                            "name": "skip"
+                            "name": "skip",
+                            "isRequired": false,
+                            "options": null,
+                            "optionsLimit": 0
                         }
                     ]
                 },
                 {
-                    "id": "year",
                     "type": "movie",
+                    "id": "year",
                     "name": "By year",
                     "extra": [
                         {
@@ -120,13 +139,14 @@
                                 "2008",
                                 "2007",
                                 "2006"
-                            ]
+                            ],
+                            "optionsLimit": 0
                         }
                     ]
                 },
                 {
-                    "id": "year",
                     "type": "series",
+                    "id": "year",
                     "name": "By year",
                     "extra": [
                         {
@@ -148,17 +168,19 @@
                                 "2008",
                                 "2007",
                                 "2006"
-                            ]
+                            ],
+                            "optionsLimit": 0
                         }
                     ]
                 },
                 {
-                    "id": "imdbRating",
                     "type": "movie",
+                    "id": "imdbRating",
                     "name": "By rating",
                     "extra": [
                         {
                             "name": "genre",
+                            "isRequired": false,
                             "options": [
                                 "Action",
                                 "Adventure",
@@ -180,20 +202,25 @@
                                 "Thriller",
                                 "War",
                                 "Western"
-                            ]
+                            ],
+                            "optionsLimit": 0
                         },
                         {
-                            "name": "skip"
+                            "name": "skip",
+                            "isRequired": false,
+                            "options": null,
+                            "optionsLimit": 0
                         }
                     ]
                 },
                 {
-                    "id": "imdbRating",
                     "type": "series",
+                    "id": "imdbRating",
                     "name": "By rating",
                     "extra": [
                         {
                             "name": "genre",
+                            "isRequired": false,
                             "options": [
                                 "Action",
                                 "Adventure",
@@ -217,10 +244,14 @@
                                 "Western",
                                 "Reality-TV",
                                 "Talk-Show"
-                            ]
+                            ],
+                            "optionsLimit": 0
                         },
                         {
-                            "name": "skip"
+                            "name": "skip",
+                            "isRequired": false,
+                            "options": null,
+                            "optionsLimit": 0
                         }
                     ]
                 }
@@ -229,16 +260,20 @@
                 {
                     "type": "movie",
                     "id": "official",
-                    "name": "Official"
+                    "name": "Official",
+                    "extraRequired": [],
+                    "extraSupported": []
                 },
                 {
                     "type": "series",
                     "id": "official",
-                    "name": "Official"
+                    "name": "Official",
+                    "extraRequired": [],
+                    "extraSupported": []
                 }
-            ]
+            ],
+            "behaviorHints": {}
         },
-        "transportName": "http",
         "transportUrl": "https://v4-cinemeta.strem.io/manifest.json",
         "flags": {
             "official": true,

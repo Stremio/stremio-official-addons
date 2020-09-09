@@ -1,26 +1,26 @@
 {
-  "name": "stremio-official-addons",
-  "version": "1.5.0",
-  "description": "All the stremio official add-ons, in AddonCollection.load() format",
-  "main": "index.js",
-  "scripts": {
-    "generate": "node ./scripts/gen.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Stremio/stremio-official-addons.git"
-  },
-  "keywords": [
-    "addons",
-    "stremio"
-  ],
-  "author": "Smart Code OOD",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Stremio/stremio-official-addons/issues"
-  },
-  "homepage": "https://github.com/Stremio/stremio-official-addons#readme",
-  "devDependencies": {
-    "stremio-addon-client": "^1.5.2"
-  }
+    "name": "stremio-official-addons",
+    "version": "1.5.0",
+    "description": "All of the stremio official addons",
+    "main": "index.js",
+    "scripts": {
+        "generate": "node ./scripts/gen.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Stremio/stremio-official-addons.git"
+    },
+    "keywords": [
+        "addons",
+        "stremio"
+    ],
+    "author": "Smart Code OOD",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Stremio/stremio-official-addons/issues"
+    },
+    "homepage": "https://github.com/Stremio/stremio-official-addons#readme",
+    "devDependencies": {
+        "stremio-addon-client": "^1.5.2"
+    }
 }

@@ -4,7 +4,7 @@
   "description": "All the stremio official add-ons, in AddonCollection.load() format",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "node ./scripts/gen.js"
   },
   "repository": {
     "type": "git",

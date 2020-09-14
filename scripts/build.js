@@ -35,8 +35,14 @@ function getDescriptor(transportUrl) {
 Promise.all(OFFICIAL_URLS.map((url) => getDescriptor(url)))
     .then((descriptors) => {
         return descriptors
-            .map((descriptor) => validator.descriptor(descriptor))
-            .filter((descriptor) => descriptor !== null);
+            .map((descriptor) => {
+                const validated = validator.descriptor(descriptor);
+                if (validated === null) {
+                    throw new Error(`${descriptor.transportUrl} is invalid`);
+                }
+
+                return validated;
+            });
     })
     .then((descriptors) => {
         fs.writeFileSync('./addons.json', JSON.stringify(descriptors, null, 4));

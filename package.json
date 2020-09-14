@@ -23,6 +23,7 @@
     },
     "devDependencies": {
         "@stremio/stremio-core-validator": "0.7.0",
-        "node-fetch": "2.6.1"
+        "node-fetch": "2.6.1",
+        "stremio-addon-client": "1.16.1"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "name": "stremio-official-addons",
+    "name": "@stremio/stremio-official-addons",
     "version": "2.0.0",
     "description": "All of the stremio official addons",
     "author": {

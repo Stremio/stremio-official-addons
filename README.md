@@ -1,18 +1,14 @@
 # stremio-official-addons
 
-All the stremio official add-ons, in `AddonCollection.load()` format
+All of the stremio official addons.
 
-The `index.js` file is meant to be generated from the output of `AddonCollection.save()`
+## Build
 
+To re-generate `addons.json` you can run `npm run build`
 
-## Update
+## Changing the official addons collection
 
-To re-generate `index.json` you can do `scripts/gen.js > index.json`
-
-
-## Changing the official add-ons
-
-To change what's contained in this module, you have to change `scripts/gen.js`
+To change what's contained in this module, you have to change `scripts/build.js`
 
 Besides changing this module, you have to update all it's dependant packages, most notably:
 

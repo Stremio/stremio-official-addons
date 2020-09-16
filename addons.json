@@ -51,19 +51,19 @@
                                 "War",
                                 "Western"
                             ],
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         },
                         {
                             "name": "search",
                             "isRequired": false,
                             "options": null,
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         },
                         {
                             "name": "skip",
                             "isRequired": false,
                             "options": null,
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         }
                     ]
                 },
@@ -99,19 +99,19 @@
                                 "Reality-TV",
                                 "Talk-Show"
                             ],
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         },
                         {
                             "name": "search",
                             "isRequired": false,
                             "options": null,
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         },
                         {
                             "name": "skip",
                             "isRequired": false,
                             "options": null,
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         }
                     ]
                 },
@@ -140,7 +140,7 @@
                                 "2007",
                                 "2006"
                             ],
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         }
                     ]
                 },
@@ -169,7 +169,7 @@
                                 "2007",
                                 "2006"
                             ],
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         }
                     ]
                 },
@@ -203,13 +203,13 @@
                                 "War",
                                 "Western"
                             ],
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         },
                         {
                             "name": "skip",
                             "isRequired": false,
                             "options": null,
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         }
                     ]
                 },
@@ -245,13 +245,13 @@
                                 "Reality-TV",
                                 "Talk-Show"
                             ],
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         },
                         {
                             "name": "skip",
                             "isRequired": false,
                             "options": null,
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         }
                     ]
                 }
@@ -439,13 +439,13 @@
                             "name": "skip",
                             "isRequired": false,
                             "options": null,
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         },
                         {
                             "name": "search",
                             "isRequired": false,
                             "options": null,
-                            "optionsLimit": 0
+                            "optionsLimit": 1
                         }
                     ]
                 }

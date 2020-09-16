@@ -1,8 +1,19 @@
 [package]
 name = "stremio-official-addons"
+description = "All of the stremio official addons"
 version = "2.0.0"
 authors = ["nklhrstv <me@nikolahristov.com>"]
 edition = "2018"
+license-file = "LICENSE.md"
+readme = "README.md"
+repository = "https://github.com/Stremio/stremio-official-addons"
+include = [
+    "/src/**/*.rs",
+    "/Cargo.toml",
+    "/addons.json",
+    "/LICENSE.md",
+    "/README.md"
+]
 
 [lib]
 doctest = false

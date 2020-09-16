@@ -25,6 +25,6 @@
         "@stremio/stremio-core-validator": "0.8.0",
         "node-fetch": "2.6.1",
         "stremio-addon-client": "1.16.1",
-        "stremio-local-addon": "1.9.1"
+        "stremio-local-addon": "1.9.2"
     }
 }

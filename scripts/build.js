@@ -2,6 +2,7 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
 const validator = require('@stremio/stremio-core-validator');
+const localAddonManifest = require('stremio-local-addon/lib/manifest');
 const legacyManifestMapper = require('stremio-addon-client/lib/transports/legacy/mapper');
 
 const LEGACY_REQUEST_PARAM = '/q.json?b=eyJwYXJhbXMiOltdLCJtZXRob2QiOiJtZXRhIiwiaWQiOjEsImpzb25ycGMiOiIyLjAifQ==';
@@ -18,12 +19,21 @@ const OFFICIAL_URLS = [
     "http://127.0.0.1:11470/local-addon/manifest.json",
 ];
 
-function getDescriptor(transportUrl) {
+function getManifest(transportUrl) {
+    if (transportUrl === 'http://127.0.0.1:11470/local-addon/manifest.json') {
+        return Promise.resolve(localAddonManifest);
+    }
+
     const legacy = transportUrl.endsWith('stremio/v1');
     return fetch(legacy ? `${transportUrl}${LEGACY_REQUEST_PARAM}` : transportUrl)
         .then((resp) => resp.json())
-        .then((resp) => ({
-            manifest: legacy ? legacyManifestMapper.mapManifest(resp.result) : resp,
+        .then((resp) => legacy ? legacyManifestMapper.mapManifest(resp.result) : resp);
+}
+
+function getDescriptor(transportUrl) {
+    return getManifest(transportUrl)
+        .then((manifest) => ({
+            manifest,
             transportUrl,
             flags: {
                 official: true,

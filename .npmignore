@@ -1,0 +1,6 @@
+/.github
+/scripts
+/src
+/target
+/Cargo.toml
+/Cargo.lock

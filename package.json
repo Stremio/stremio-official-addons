@@ -1,6 +1,6 @@
 {
     "name": "@stremio/stremio-official-addons",
-    "version": "2.0.6",
+    "version": "2.0.7",
     "description": "All of the stremio official addons",
     "author": "Smart Code OOD",
     "main": "addons.json",

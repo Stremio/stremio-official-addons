@@ -46,7 +46,7 @@ Promise.all(OFFICIAL_URLS.map((url) => getDescriptor(url)))
     .then((descriptors) => {
         return descriptors
             .map((descriptor) => {
-                const validated = validator.descriptor(descriptor);
+                const validated = validator.descriptor(JSON.stringify(descriptor));
                 if (validated === null) {
                     throw new Error(`${descriptor.transportUrl} is invalid`);
                 }

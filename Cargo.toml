@@ -2,7 +2,7 @@
 name = "stremio-official-addons"
 description = "All of the stremio official addons"
 version = "2.0.5"
-authors = ["nklhrstv <me@nikolahristov.com>"]
+authors = ["Smart Code OOD"]
 edition = "2018"
 license-file = "LICENSE.md"
 readme = "README.md"

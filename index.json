@@ -2,7 +2,7 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "version": "2.13.0",
+            "version": "2.13.5",
             "description": "The official add-on for movie and series catalogs",
             "name": "Cinemeta",
             "resources": [
@@ -135,6 +135,8 @@
                     "type": "movie",
                     "id": "year",
                     "genres": [
+                        "2021",
+                        "2020",
                         "2019",
                         "2018",
                         "2017",
@@ -147,14 +149,14 @@
                         "2010",
                         "2009",
                         "2008",
-                        "2007",
-                        "2006",
-                        "2005"
+                        "2007"
                     ],
                     "extra": [
                         {
                             "name": "genre",
                             "options": [
+                                "2021",
+                                "2020",
                                 "2019",
                                 "2018",
                                 "2017",
@@ -167,9 +169,7 @@
                                 "2010",
                                 "2009",
                                 "2008",
-                                "2007",
-                                "2006",
-                                "2005"
+                                "2007"
                             ],
                             "isRequired": true
                         }
@@ -186,6 +186,8 @@
                     "type": "series",
                     "id": "year",
                     "genres": [
+                        "2021",
+                        "2020",
                         "2019",
                         "2018",
                         "2017",
@@ -198,14 +200,14 @@
                         "2010",
                         "2009",
                         "2008",
-                        "2007",
-                        "2006",
-                        "2005"
+                        "2007"
                     ],
                     "extra": [
                         {
                             "name": "genre",
                             "options": [
+                                "2021",
+                                "2020",
                                 "2019",
                                 "2018",
                                 "2017",
@@ -218,9 +220,7 @@
                                 "2010",
                                 "2009",
                                 "2008",
-                                "2007",
-                                "2006",
-                                "2005"
+                                "2007"
                             ],
                             "isRequired": true
                         }
@@ -320,7 +320,7 @@
     {
         "manifest": {
             "id": "com.linvo.stremiochannels",
-            "version": "1.30.5",
+            "version": "1.30.6",
             "description": "Watch your favourite YouTube channels ad-free and get notified when they upload new videos.",
             "name": "YouTube",
             "resources": [
@@ -442,7 +442,7 @@
     {
         "manifest": {
             "id": "org.stremio.opensubtitles",
-            "version": "0.22.0",
+            "version": "0.24.0",
             "name": "OpenSubtitles",
             "description": "The official add-on for subtitles from OpenSubtitles",
             "logo": "http://www.strem.io/images/addons/opensubtitles-logo.png",

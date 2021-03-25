@@ -2,7 +2,7 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "version": "2.13.5",
+            "version": "2.13.6",
             "description": "The official add-on for movie and series catalogs",
             "name": "Cinemeta",
             "resources": [
@@ -465,11 +465,10 @@
     {
         "manifest": {
             "id": "org.stremio.local",
-            "version": "1.9.1",
+            "version": "1.10.0",
             "description": "Local add-on to find playable files: .torrent, .mp4, .mkv and .avi",
-            "name": "Local Files",
+            "name": "Local Files (without catalog support)",
             "resources": [
-                "catalog",
                 {
                     "name": "meta",
                     "types": [
@@ -496,12 +495,7 @@
                 "series",
                 "other"
             ],
-            "catalogs": [
-                {
-                    "type": "other",
-                    "id": "local"
-                }
-            ]
+            "catalogs": []
         },
         "transportName": "http",
         "transportUrl": "http://127.0.0.1:11470/local-addon/manifest.json",

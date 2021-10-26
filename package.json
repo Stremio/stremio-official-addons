@@ -18,9 +18,9 @@
         "build": "node ./scripts/build.js"
     },
     "devDependencies": {
-        "@stremio/stremio-core-validator": "1.0.0",
+        "@stremio/stremio-core-validator": "1.0.1",
         "node-fetch": "2.6.1",
         "stremio-addon-client": "1.16.1",
-        "stremio-local-addon": "1.9.2"
+        "stremio-local-addon": "https://github.com/Stremio/stremio-local-addon#df4371636f363b1f27899a6930eb3ae37c17d004"
     }
 }

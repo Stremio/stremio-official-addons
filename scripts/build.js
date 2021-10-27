@@ -3,7 +3,7 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
 const validator = require('@stremio/stremio-core-validator');
-const localAddonManifest = require('stremio-local-addon/lib/manifest');
+const localAddonManifest = require('stremio-local-addon/lib/manifestNoCatalogs');
 const legacyManifestMapper = require('stremio-addon-client/lib/transports/legacy/mapper');
 
 const LEGACY_REQUEST_PARAM = '/q.json?b=eyJwYXJhbXMiOltdLCJtZXRob2QiOiJtZXRhIiwiaWQiOjEsImpzb25ycGMiOiIyLjAifQ==';

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 const fs = require('fs');
 const fetch = require('node-fetch');
 const validator = require('@stremio/stremio-core-validator');
@@ -7,16 +8,16 @@ const legacyManifestMapper = require('stremio-addon-client/lib/transports/legacy
 
 const LEGACY_REQUEST_PARAM = '/q.json?b=eyJwYXJhbXMiOltdLCJtZXRob2QiOiJtZXRhIiwiaWQiOjEsImpzb25ycGMiOiIyLjAifQ==';
 const PROTECTED_URLS = [
-    "https://v4-cinemeta.strem.io/manifest.json",
-    "http://127.0.0.1:11470/local-addon/manifest.json",
+    'https://v3-cinemeta.strem.io/manifest.json',
+    'http://127.0.0.1:11470/local-addon/manifest.json',
 ];
 const OFFICIAL_URLS = [
-    "https://v4-cinemeta.strem.io/manifest.json",
-    "https://v3-channels.strem.io/manifest.json",
-    "https://watchhub.strem.io/manifest.json",
-    "https://caching.stremio.net/publicdomainmovies.now.sh/manifest.json",
-    "https://opensubtitles.strem.io/stremio/v1",
-    "http://127.0.0.1:11470/local-addon/manifest.json",
+    'https://v3-cinemeta.strem.io/manifest.json',
+    'https://v3-channels.strem.io/manifest.json',
+    'https://watchhub.strem.io/manifest.json',
+    'https://caching.stremio.net/publicdomainmovies.now.sh/manifest.json',
+    'https://opensubtitles.strem.io/stremio/v1',
+    'http://127.0.0.1:11470/local-addon/manifest.json',
 ];
 
 function getManifest(transportUrl) {

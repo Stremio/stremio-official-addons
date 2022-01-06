@@ -2,8 +2,8 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "version": "2.13.6",
-            "description": "The official add-on for movie and series catalogs",
+            "version": "3.0.5",
+            "description": "The official addon for movie and series catalogs",
             "name": "Cinemeta",
             "resources": [
                 "catalog",
@@ -19,49 +19,59 @@
             ],
             "addonCatalogs": [
                 {
+                    "type": "all",
+                    "id": "official",
+                    "name": "Official"
+                },
+                {
                     "type": "movie",
-                    "id": "thirdparty",
-                    "name": "Third-party"
+                    "id": "official",
+                    "name": "Official"
                 },
                 {
                     "type": "series",
-                    "id": "thirdparty",
-                    "name": "Third-party"
+                    "id": "official",
+                    "name": "Official"
                 },
                 {
                     "type": "channel",
-                    "id": "thirdparty",
-                    "name": "Third-party"
+                    "id": "official",
+                    "name": "Official"
+                },
+                {
+                    "type": "all",
+                    "id": "community",
+                    "name": "Community"
+                },
+                {
+                    "type": "movie",
+                    "id": "community",
+                    "name": "Community"
+                },
+                {
+                    "type": "series",
+                    "id": "community",
+                    "name": "Community"
+                },
+                {
+                    "type": "channel",
+                    "id": "community",
+                    "name": "Community"
                 },
                 {
                     "type": "tv",
-                    "id": "thirdparty",
-                    "name": "Third-party"
+                    "id": "community",
+                    "name": "Community"
                 },
                 {
                     "type": "Podcasts",
-                    "id": "thirdparty",
-                    "name": "Third-party"
+                    "id": "community",
+                    "name": "Community"
                 },
                 {
                     "type": "other",
-                    "id": "thirdparty",
-                    "name": "Third-party"
-                },
-                {
-                    "type": "movie",
-                    "id": "official",
-                    "name": "Official"
-                },
-                {
-                    "type": "series",
-                    "id": "official",
-                    "name": "Official"
-                },
-                {
-                    "type": "channel",
-                    "id": "official",
-                    "name": "Official"
+                    "id": "community",
+                    "name": "Community"
                 }
             ],
             "catalogs": [
@@ -90,6 +100,39 @@
                         "War",
                         "Western"
                     ],
+                    "extra": [
+                        {
+                            "name": "genre",
+                            "options": [
+                                "Action",
+                                "Adventure",
+                                "Animation",
+                                "Biography",
+                                "Comedy",
+                                "Crime",
+                                "Documentary",
+                                "Drama",
+                                "Family",
+                                "Fantasy",
+                                "Game-Show",
+                                "History",
+                                "Horror",
+                                "Mystery",
+                                "Romance",
+                                "Sci-Fi",
+                                "Sport",
+                                "Thriller",
+                                "War",
+                                "Western"
+                            ]
+                        },
+                        {
+                            "name": "search"
+                        },
+                        {
+                            "name": "skip"
+                        }
+                    ],
                     "extraSupported": [
                         "search",
                         "genre",
@@ -124,6 +167,41 @@
                         "Reality-TV",
                         "Talk-Show"
                     ],
+                    "extra": [
+                        {
+                            "name": "genre",
+                            "options": [
+                                "Action",
+                                "Adventure",
+                                "Animation",
+                                "Biography",
+                                "Comedy",
+                                "Crime",
+                                "Documentary",
+                                "Drama",
+                                "Family",
+                                "Fantasy",
+                                "Game-Show",
+                                "History",
+                                "Horror",
+                                "Mystery",
+                                "Romance",
+                                "Sci-Fi",
+                                "Sport",
+                                "Thriller",
+                                "War",
+                                "Western",
+                                "Reality-TV",
+                                "Talk-Show"
+                            ]
+                        },
+                        {
+                            "name": "search"
+                        },
+                        {
+                            "name": "skip"
+                        }
+                    ],
                     "extraSupported": [
                         "search",
                         "genre",
@@ -135,6 +213,7 @@
                     "type": "movie",
                     "id": "year",
                     "genres": [
+                        "2022",
                         "2021",
                         "2020",
                         "2019",
@@ -148,13 +227,13 @@
                         "2011",
                         "2010",
                         "2009",
-                        "2008",
-                        "2007"
+                        "2008"
                     ],
                     "extra": [
                         {
                             "name": "genre",
                             "options": [
+                                "2022",
                                 "2021",
                                 "2020",
                                 "2019",
@@ -168,8 +247,7 @@
                                 "2011",
                                 "2010",
                                 "2009",
-                                "2008",
-                                "2007"
+                                "2008"
                             ],
                             "isRequired": true
                         }
@@ -186,6 +264,7 @@
                     "type": "series",
                     "id": "year",
                     "genres": [
+                        "2022",
                         "2021",
                         "2020",
                         "2019",
@@ -199,13 +278,13 @@
                         "2011",
                         "2010",
                         "2009",
-                        "2008",
-                        "2007"
+                        "2008"
                     ],
                     "extra": [
                         {
                             "name": "genre",
                             "options": [
+                                "2022",
                                 "2021",
                                 "2020",
                                 "2019",
@@ -219,8 +298,7 @@
                                 "2011",
                                 "2010",
                                 "2009",
-                                "2008",
-                                "2007"
+                                "2008"
                             ],
                             "isRequired": true
                         }
@@ -258,6 +336,36 @@
                         "War",
                         "Western"
                     ],
+                    "extra": [
+                        {
+                            "name": "genre",
+                            "options": [
+                                "Action",
+                                "Adventure",
+                                "Animation",
+                                "Biography",
+                                "Comedy",
+                                "Crime",
+                                "Documentary",
+                                "Drama",
+                                "Family",
+                                "Fantasy",
+                                "Game-Show",
+                                "History",
+                                "Horror",
+                                "Mystery",
+                                "Romance",
+                                "Sci-Fi",
+                                "Sport",
+                                "Thriller",
+                                "War",
+                                "Western"
+                            ]
+                        },
+                        {
+                            "name": "skip"
+                        }
+                    ],
                     "extraSupported": [
                         "genre",
                         "skip"
@@ -291,6 +399,38 @@
                         "Reality-TV",
                         "Talk-Show"
                     ],
+                    "extra": [
+                        {
+                            "name": "genre",
+                            "options": [
+                                "Action",
+                                "Adventure",
+                                "Animation",
+                                "Biography",
+                                "Comedy",
+                                "Crime",
+                                "Documentary",
+                                "Drama",
+                                "Family",
+                                "Fantasy",
+                                "Game-Show",
+                                "History",
+                                "Horror",
+                                "Mystery",
+                                "Romance",
+                                "Sci-Fi",
+                                "Sport",
+                                "Thriller",
+                                "War",
+                                "Western",
+                                "Reality-TV",
+                                "Talk-Show"
+                            ]
+                        },
+                        {
+                            "name": "skip"
+                        }
+                    ],
                     "extraSupported": [
                         "genre",
                         "skip"
@@ -300,6 +440,13 @@
                 {
                     "type": "series",
                     "id": "last-videos",
+                    "extra": [
+                        {
+                            "name": "lastVideosIds",
+                            "isRequired": true,
+                            "optionsLimit": 500
+                        }
+                    ],
                     "extraSupported": [
                         "lastVideosIds"
                     ],
@@ -311,7 +458,7 @@
             ]
         },
         "transportName": "http",
-        "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",
+        "transportUrl": "https://v3-cinemeta.strem.io/manifest.json?1641474134561",
         "flags": {
             "official": true,
             "protected": true
@@ -320,7 +467,7 @@
     {
         "manifest": {
             "id": "com.linvo.stremiochannels",
-            "version": "1.30.6",
+            "version": "1.30.7",
             "description": "Watch your favourite YouTube channels ad-free and get notified when they upload new videos.",
             "name": "YouTube",
             "resources": [
@@ -337,41 +484,50 @@
                 {
                     "type": "channel",
                     "id": "top",
-                    "genres": [
-                        "Animation",
-                        "Automotive",
-                        "Beauty & Fashion",
-                        "Causes & Non-profits",
-                        "Comedy",
-                        "Cooking & Health",
-                        "Film & Entertainment",
-                        "From TV",
-                        "Gaming",
-                        "Lifestyle",
-                        "Music",
-                        "News & Politics",
-                        "Sports"
-                    ],
-                    "extraSupported": [
-                        "search",
-                        "genre",
-                        "skip"
+                    "extra": [
+                        {
+                            "name": "search",
+                            "isRequired": false
+                        },
+                        {
+                            "name": "genre",
+                            "options": [
+                                "Animation",
+                                "Automotive",
+                                "Beauty & Fashion",
+                                "Causes & Non-profits",
+                                "Comedy",
+                                "Cooking & Health",
+                                "Film & Entertainment",
+                                "From TV",
+                                "Gaming",
+                                "Lifestyle",
+                                "Music",
+                                "News & Politics",
+                                "Sports"
+                            ],
+                            "isRequired": false
+                        },
+                        {
+                            "name": "skip",
+                            "isRequired": false
+                        }
                     ]
                 },
                 {
                     "type": "channel",
                     "id": "videos",
-                    "extraRequired": [
-                        "search"
-                    ],
-                    "extraSupported": [
-                        "search"
+                    "extra": [
+                        {
+                            "name": "search",
+                            "isRequired": true
+                        }
                     ]
                 }
             ]
         },
         "transportName": "http",
-        "transportUrl": "https://v3-channels.strem.io/manifest.json",
+        "transportUrl": "https://v3-channels.strem.io/manifest.json?1641474134574",
         "flags": {
             "official": true
         }
@@ -396,7 +552,7 @@
             ]
         },
         "transportName": "http",
-        "transportUrl": "https://watchhub.strem.io/manifest.json",
+        "transportUrl": "https://watchhub.strem.io/manifest.json?1641474134575",
         "flags": {
             "official": true
         }
@@ -434,7 +590,7 @@
             ]
         },
         "transportName": "http",
-        "transportUrl": "https://caching.stremio.net/publicdomainmovies.now.sh/manifest.json",
+        "transportUrl": "https://caching.stremio.net/publicdomainmovies.now.sh/manifest.json?1641474134576",
         "flags": {
             "official": true
         }
@@ -498,7 +654,7 @@
             "catalogs": []
         },
         "transportName": "http",
-        "transportUrl": "http://127.0.0.1:11470/local-addon/manifest.json",
+        "transportUrl": "http://127.0.0.1:11470/local-addon/manifest.json?1641474134578",
         "flags": {
             "official": true,
             "protected": true

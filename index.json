@@ -458,7 +458,7 @@
             ]
         },
         "transportName": "http",
-        "transportUrl": "https://v3-cinemeta.strem.io/manifest.json?1641474134561",
+        "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",
         "flags": {
             "official": true,
             "protected": true
@@ -527,7 +527,7 @@
             ]
         },
         "transportName": "http",
-        "transportUrl": "https://v3-channels.strem.io/manifest.json?1641474134574",
+        "transportUrl": "https://v3-channels.strem.io/manifest.json",
         "flags": {
             "official": true
         }
@@ -552,7 +552,7 @@
             ]
         },
         "transportName": "http",
-        "transportUrl": "https://watchhub.strem.io/manifest.json?1641474134575",
+        "transportUrl": "https://watchhub.strem.io/manifest.json",
         "flags": {
             "official": true
         }
@@ -590,7 +590,7 @@
             ]
         },
         "transportName": "http",
-        "transportUrl": "https://caching.stremio.net/publicdomainmovies.now.sh/manifest.json?1641474134576",
+        "transportUrl": "https://caching.stremio.net/publicdomainmovies.now.sh/manifest.json",
         "flags": {
             "official": true
         }
@@ -654,7 +654,7 @@
             "catalogs": []
         },
         "transportName": "http",
-        "transportUrl": "http://127.0.0.1:11470/local-addon/manifest.json?1641474134578",
+        "transportUrl": "http://127.0.0.1:11470/local-addon/manifest.json",
         "flags": {
             "official": true,
             "protected": true

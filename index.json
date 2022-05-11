@@ -2,7 +2,7 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "version": "3.0.5",
+            "version": "3.0.7",
             "description": "The official addon for movie and series catalogs",
             "name": "Cinemeta",
             "resources": [
@@ -89,7 +89,6 @@
                         "Drama",
                         "Family",
                         "Fantasy",
-                        "Game-Show",
                         "History",
                         "Horror",
                         "Mystery",
@@ -114,7 +113,6 @@
                                 "Drama",
                                 "Family",
                                 "Fantasy",
-                                "Game-Show",
                                 "History",
                                 "Horror",
                                 "Mystery",
@@ -138,7 +136,7 @@
                         "genre",
                         "skip"
                     ],
-                    "name": "Top"
+                    "name": "Popular"
                 },
                 {
                     "type": "series",
@@ -154,7 +152,6 @@
                         "Drama",
                         "Family",
                         "Fantasy",
-                        "Game-Show",
                         "History",
                         "Horror",
                         "Mystery",
@@ -165,7 +162,8 @@
                         "War",
                         "Western",
                         "Reality-TV",
-                        "Talk-Show"
+                        "Talk-Show",
+                        "Game-Show"
                     ],
                     "extra": [
                         {
@@ -181,7 +179,6 @@
                                 "Drama",
                                 "Family",
                                 "Fantasy",
-                                "Game-Show",
                                 "History",
                                 "Horror",
                                 "Mystery",
@@ -192,7 +189,8 @@
                                 "War",
                                 "Western",
                                 "Reality-TV",
-                                "Talk-Show"
+                                "Talk-Show",
+                                "Game-Show"
                             ]
                         },
                         {
@@ -207,7 +205,7 @@
                         "genre",
                         "skip"
                     ],
-                    "name": "Top"
+                    "name": "Popular"
                 },
                 {
                     "type": "movie",
@@ -227,7 +225,12 @@
                         "2011",
                         "2010",
                         "2009",
-                        "2008"
+                        "2008",
+                        "2007",
+                        "2006",
+                        "2005",
+                        "2004",
+                        "2003"
                     ],
                     "extra": [
                         {
@@ -247,7 +250,12 @@
                                 "2011",
                                 "2010",
                                 "2009",
-                                "2008"
+                                "2008",
+                                "2007",
+                                "2006",
+                                "2005",
+                                "2004",
+                                "2003"
                             ],
                             "isRequired": true
                         }
@@ -258,7 +266,7 @@
                     "extraRequired": [
                         "genre"
                     ],
-                    "name": "By year"
+                    "name": "New"
                 },
                 {
                     "type": "series",
@@ -278,7 +286,12 @@
                         "2011",
                         "2010",
                         "2009",
-                        "2008"
+                        "2008",
+                        "2007",
+                        "2006",
+                        "2005",
+                        "2004",
+                        "2003"
                     ],
                     "extra": [
                         {
@@ -298,7 +311,12 @@
                                 "2011",
                                 "2010",
                                 "2009",
-                                "2008"
+                                "2008",
+                                "2007",
+                                "2006",
+                                "2005",
+                                "2004",
+                                "2003"
                             ],
                             "isRequired": true
                         }
@@ -309,7 +327,7 @@
                     "extraRequired": [
                         "genre"
                     ],
-                    "name": "By year"
+                    "name": "New"
                 },
                 {
                     "type": "movie",
@@ -325,7 +343,6 @@
                         "Drama",
                         "Family",
                         "Fantasy",
-                        "Game-Show",
                         "History",
                         "Horror",
                         "Mystery",
@@ -350,7 +367,6 @@
                                 "Drama",
                                 "Family",
                                 "Fantasy",
-                                "Game-Show",
                                 "History",
                                 "Horror",
                                 "Mystery",
@@ -370,7 +386,7 @@
                         "genre",
                         "skip"
                     ],
-                    "name": "By rating"
+                    "name": "Worth Watching"
                 },
                 {
                     "type": "series",
@@ -386,7 +402,6 @@
                         "Drama",
                         "Family",
                         "Fantasy",
-                        "Game-Show",
                         "History",
                         "Horror",
                         "Mystery",
@@ -397,7 +412,8 @@
                         "War",
                         "Western",
                         "Reality-TV",
-                        "Talk-Show"
+                        "Talk-Show",
+                        "Game-Show"
                     ],
                     "extra": [
                         {
@@ -413,7 +429,6 @@
                                 "Drama",
                                 "Family",
                                 "Fantasy",
-                                "Game-Show",
                                 "History",
                                 "Horror",
                                 "Mystery",
@@ -424,7 +439,8 @@
                                 "War",
                                 "Western",
                                 "Reality-TV",
-                                "Talk-Show"
+                                "Talk-Show",
+                                "Game-Show"
                             ]
                         },
                         {
@@ -435,7 +451,7 @@
                         "genre",
                         "skip"
                     ],
-                    "name": "By rating"
+                    "name": "Worth Watching"
                 },
                 {
                     "type": "series",

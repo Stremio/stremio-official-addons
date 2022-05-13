@@ -2,7 +2,7 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "version": "3.0.7",
+            "version": "3.0.8",
             "description": "The official addon for movie and series catalogs",
             "name": "Cinemeta",
             "resources": [
@@ -258,10 +258,14 @@
                                 "2003"
                             ],
                             "isRequired": true
+                        },
+                        {
+                            "name": "skip"
                         }
                     ],
                     "extraSupported": [
-                        "genre"
+                        "genre",
+                        "skip"
                     ],
                     "extraRequired": [
                         "genre"
@@ -319,10 +323,14 @@
                                 "2003"
                             ],
                             "isRequired": true
+                        },
+                        {
+                            "name": "skip"
                         }
                     ],
                     "extraSupported": [
-                        "genre"
+                        "genre",
+                        "skip"
                     ],
                     "extraRequired": [
                         "genre"

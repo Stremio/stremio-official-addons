@@ -1,6 +1,6 @@
 {
   "name": "stremio-official-addons",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "All the stremio official add-ons, in AddonCollection.load() format",
   "main": "index.js",
   "scripts": {

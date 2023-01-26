@@ -2,7 +2,7 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "version": "3.0.9",
+            "version": "3.0.10",
             "description": "The official addon for movie and series catalogs",
             "name": "Cinemeta",
             "resources": [
@@ -211,6 +211,7 @@
                     "type": "movie",
                     "id": "year",
                     "genres": [
+                        "2023",
                         "2022",
                         "2021",
                         "2020",
@@ -319,6 +320,7 @@
                         {
                             "name": "genre",
                             "options": [
+                                "2023",
                                 "2022",
                                 "2021",
                                 "2020",
@@ -442,6 +444,7 @@
                     "type": "series",
                     "id": "year",
                     "genres": [
+                        "2023",
                         "2022",
                         "2021",
                         "2020",
@@ -510,6 +513,7 @@
                         {
                             "name": "genre",
                             "options": [
+                                "2023",
                                 "2022",
                                 "2021",
                                 "2020",
@@ -731,7 +735,10 @@
                     ],
                     "name": "Last videos"
                 }
-            ]
+            ],
+            "behaviorHints": {
+                "newEpisodeNotifications": true
+            }
         },
         "transportName": "http",
         "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",

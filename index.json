@@ -880,6 +880,29 @@
     },
     {
         "manifest": {
+            "id": "org.stremio.opensubtitlesv3",
+            "version": "1.0.0",
+            "name": "OpenSubtitles v3",
+            "catalogs": [],
+            "resources": [
+                "subtitles"
+            ],
+            "types": [
+                "movie",
+                "series"
+            ],
+            "idPrefixes": [
+                "tt"
+            ]
+        },
+        "transportName": "http",
+        "transportUrl": "https://opensubtitles-v3.strem.io/manifest.json",
+        "flags": {
+            "official": true
+        }
+    },
+    {
+        "manifest": {
             "id": "org.stremio.opensubtitles",
             "version": "0.24.0",
             "name": "OpenSubtitles",

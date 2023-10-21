@@ -7,6 +7,7 @@ const ENDPOINTS = [
     "https://v3-channels.strem.io/manifest.json",
     "https://watchhub.strem.io/manifest.json",
     "https://caching.stremio.net/publicdomainmovies.now.sh/manifest.json",
+    "https://opensubtitles-v3.strem.io/manifest.json",
     "https://opensubtitles.strem.io/stremio/v1",
     "http://127.0.0.1:11470/local-addon/manifest.json",
 ]

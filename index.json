@@ -903,7 +903,7 @@
     },
     {
         "manifest": {
-            "id": "org.myexampleaddon",
+            "id": "org.stremio.opensubtitlesv3",
             "version": "1.0.0",
             "name": "OpenSubtitles v3",
             "catalogs": [],

@@ -903,6 +903,29 @@
     },
     {
         "manifest": {
+            "id": "org.myexampleaddon",
+            "version": "1.0.0",
+            "name": "OpenSubtitles v3",
+            "catalogs": [],
+            "resources": [
+                "subtitles"
+            ],
+            "types": [
+                "movie",
+                "series"
+            ],
+            "idPrefixes": [
+                "tt"
+            ]
+        },
+        "transportName": "http",
+        "transportUrl": "https://opensubtitles-v3.strem.io/manifest.json",
+        "flags": {
+            "official": true
+        }
+    },
+    {
+        "manifest": {
             "id": "org.stremio.local",
             "version": "1.10.0",
             "description": "Local add-on to find playable files: .torrent, .mp4, .mkv and .avi",

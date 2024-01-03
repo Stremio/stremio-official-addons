@@ -1,0 +1,24 @@
+name: Build
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Setup NodeJS
+      uses: actions/setup-node@v4
+      with:
+        node-version: 12
+        cache: 'npm'
+        registry-url: https://registry.npmjs.org/
+    - name: Set default rust toolchain
+      run: rustup default 1.61.0
+    - name: Change directory
+      run: cd official-addons-rs
+    - name: Install NPM dependencies
+      run: npm ci
+    - name: Build
+      run: npm run build

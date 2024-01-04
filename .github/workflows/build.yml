@@ -16,9 +16,7 @@ jobs:
         registry-url: https://registry.npmjs.org/
     - name: Set default rust toolchain
       run: rustup default 1.61.0
-    - name: Change directory
-      run: cd official-addons-v2
     - name: Install NPM dependencies
       run: npm ci
     - name: Build
-      run: npm run build
+      run: npm run --workspace official-addons-v2 build

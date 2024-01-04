@@ -1,4 +1,4 @@
-# stremio-official-addons
+# stremio-official-addons (v2)
 
 All of the stremio official addons.
 

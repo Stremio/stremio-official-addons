@@ -22,5 +22,8 @@
   "homepage": "https://github.com/Stremio/stremio-official-addons#readme",
   "devDependencies": {
     "stremio-addon-client": "^1.5.2"
-  }
+  },
+  "workspaces": [
+    "official-addons-v2"
+  ]
 }

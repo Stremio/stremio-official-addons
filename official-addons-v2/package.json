@@ -15,7 +15,7 @@
         "stremio"
     ],
     "scripts": {
-        "build": "node ../scripts/build.js"
+        "build": "node ./scripts/build.js"
     },
     "devDependencies": {
         "@stremio/stremio-core-validator": "2.0.2",

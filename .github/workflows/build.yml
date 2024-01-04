@@ -17,7 +17,7 @@ jobs:
     - name: Set default rust toolchain
       run: rustup default 1.61.0
     - name: Change directory
-      run: cd official-addons-rs
+      run: cd official-addons-rust
     - name: Install NPM dependencies
       run: npm ci
     - name: Build

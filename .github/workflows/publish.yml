@@ -5,7 +5,32 @@ on:
     types: [published]
     
 jobs:
-  publish:
+  # FIXME: needs a running server locally for the local-addon
+  # publish-v1:
+  #   if: ${{ startsWith(github.event.release.tag_name, 'v1') }}
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: Checkout
+  #     uses: actions/checkout@v4
+  #   - name: Setup NodeJS
+  #     uses: actions/setup-node@v4
+  #     with:
+  #       node-version: 20
+  #       cache: 'npm'
+  #       registry-url: https://registry.npmjs.org/
+  #   - name: Install NPM dependencies
+  #     run: npm ci
+  #   - name: Publish to NPM
+  #     run: npm publish --workspace official-addons --access public
+  #     env:
+  #       NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+  #   - name: Publish to crates.io
+  #     run: cargo publish --workspace official-addons --allow-dirty --token "$CARGO_AUTH_TOKEN"
+  #     env:
+  #       CARGO_AUTH_TOKEN: ${{ secrets.CRATES_IO_PUBLISH_TOKEN }}
+
+  publish-v2:
+    if: ${{ startsWith(github.event.release.tag_name, 'v2') }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -13,11 +38,11 @@ jobs:
     - name: Setup NodeJS
       uses: actions/setup-node@v4
       with:
-        node-version: 12
+        node-version: 20
         cache: 'npm'
         registry-url: https://registry.npmjs.org/
-    - name: Set default rust toolchain
-      run: rustup default 1.61.0
+    - name: Rust setup (1.61)
+      uses: dtolnay/rust-toolchain@1.61
     - name: Install NPM dependencies
       run: npm ci
     - name: Build

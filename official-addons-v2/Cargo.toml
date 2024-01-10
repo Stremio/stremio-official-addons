@@ -14,7 +14,14 @@ include = [
     "/README.md"
 ]
 
-[lib]
-doctest = false
+[features]
+
+default = ["json", "std"]
+std = ["serde_json/std", "once_cell/std"]
+
+json = ["serde_json", "once_cell"]
 
 [dependencies]
+
+serde_json = { version = "1", optional = true, default-features = false }
+once_cell = { version = "1", optional = true, default-features = false }

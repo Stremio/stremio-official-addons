@@ -4,7 +4,8 @@
   "description": "All the stremio official add-ons, in AddonCollection.load() format",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./scripts/gen.js > index.json"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,9 @@
   "homepage": "https://github.com/Stremio/stremio-official-addons#readme",
   "devDependencies": {
     "stremio-addon-client": "^1.5.2"
-  }
+  },
+  "workspaces": [
+    ".",
+    "official-addons-v2"
+  ]
 }

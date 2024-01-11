@@ -2,7 +2,7 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "version": "3.0.10",
+            "version": "3.0.11",
             "description": "The official addon for movie and series catalogs",
             "name": "Cinemeta",
             "resources": [
@@ -211,6 +211,7 @@
                     "type": "movie",
                     "id": "year",
                     "genres": [
+                        "2024",
                         "2023",
                         "2022",
                         "2021",
@@ -320,6 +321,7 @@
                         {
                             "name": "genre",
                             "options": [
+                                "2024",
                                 "2023",
                                 "2022",
                                 "2021",
@@ -444,6 +446,7 @@
                     "type": "series",
                     "id": "year",
                     "genres": [
+                        "2024",
                         "2023",
                         "2022",
                         "2021",
@@ -513,6 +516,7 @@
                         {
                             "name": "genre",
                             "options": [
+                                "2024",
                                 "2023",
                                 "2022",
                                 "2021",
@@ -724,7 +728,7 @@
                         {
                             "name": "lastVideosIds",
                             "isRequired": true,
-                            "optionsLimit": 500
+                            "optionsLimit": 100
                         }
                     ],
                     "extraSupported": [
@@ -883,6 +887,7 @@
             "id": "org.stremio.opensubtitlesv3",
             "version": "1.0.0",
             "name": "OpenSubtitles v3",
+            "description": "OpenSubtitles v3 Addon for Stremio",
             "catalogs": [],
             "resources": [
                 "subtitles"
@@ -893,7 +898,8 @@
             ],
             "idPrefixes": [
                 "tt"
-            ]
+            ],
+            "logo": "http://www.strem.io/images/addons/opensubtitles-logo.png"
         },
         "transportName": "http",
         "transportUrl": "https://opensubtitles-v3.strem.io/manifest.json",

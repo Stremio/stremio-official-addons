@@ -744,7 +744,6 @@
                 "newEpisodeNotifications": true
             }
         },
-        "transportName": "http",
         "transportUrl": "https://v3-cinemeta.strem.io/manifest.json",
         "flags": {
             "official": true,
@@ -813,10 +812,10 @@
                 }
             ]
         },
-        "transportName": "http",
         "transportUrl": "https://v3-channels.strem.io/manifest.json",
         "flags": {
-            "official": true
+            "official": true,
+            "protected": false
         }
     },
     {
@@ -838,10 +837,10 @@
                 "tt"
             ]
         },
-        "transportName": "http",
         "transportUrl": "https://watchhub.strem.io/manifest.json",
         "flags": {
-            "official": true
+            "official": true,
+            "protected": false
         }
     },
     {
@@ -876,10 +875,10 @@
                 "tt"
             ]
         },
-        "transportName": "http",
         "transportUrl": "https://caching.stremio.net/publicdomainmovies.now.sh/manifest.json",
         "flags": {
-            "official": true
+            "official": true,
+            "protected": false
         }
     },
     {
@@ -901,10 +900,10 @@
             ],
             "logo": "http://www.strem.io/images/addons/opensubtitles-logo.png"
         },
-        "transportName": "http",
         "transportUrl": "https://opensubtitles-v3.strem.io/manifest.json",
         "flags": {
-            "official": true
+            "official": true,
+            "protected": false
         }
     },
     {
@@ -922,12 +921,15 @@
                 "movie",
                 "other"
             ],
-            "catalogs": []
+            "catalogs": [],
+            "behaviorHints": {
+                "adult": false
+            }
         },
-        "transportName": "legacy",
         "transportUrl": "https://opensubtitles.strem.io/stremio/v1",
         "flags": {
-            "official": true
+            "official": true,
+            "protected": false
         }
     },
     {
@@ -965,7 +967,6 @@
             ],
             "catalogs": []
         },
-        "transportName": "http",
         "transportUrl": "http://127.0.0.1:11470/local-addon/manifest.json",
         "flags": {
             "official": true,

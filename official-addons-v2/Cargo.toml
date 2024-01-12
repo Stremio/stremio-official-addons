@@ -1,12 +1,13 @@
 [package]
 name = "stremio-official-addons"
 description = "All of the stremio official addons"
-version = "2.0.11"
+version = "2.0.12"
 authors = ["Smart Code OOD"]
 edition = "2018"
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/Stremio/stremio-official-addons"
+homepage = "https://stremio.com"
 include = [
     "/src/**/*.rs",
     "/Cargo.toml",

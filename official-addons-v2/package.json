@@ -1,7 +1,8 @@
 {
     "name": "@stremio/stremio-official-addons",
-    "version": "2.0.11",
+    "version": "2.0.12",
     "description": "All of the stremio official addons",
+    "homepage": "https://stremio.com",
     "author": "Smart Code OOD",
     "main": "addons.json",
     "license": "MIT",

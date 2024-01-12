@@ -18,6 +18,9 @@ To change what's contained in this module, you have to change `scripts/build.js`
 
 Besides changing this module, you have to update all it's dependant packages.
 
+# License
+
+This project is licensed under the [MIT license](./LICENSE.md).
 
 [v2-npm-link]: https://www.npmjs.com/package/@stremio/stremio-official-addons
 [downloads badge]: https://img.shields.io/npm/dm/%40stremio/stremio-official-addons?label=%40stremio%2Fstremio-official-addons%20downloads&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40stremio%2Fstremio-official-addons

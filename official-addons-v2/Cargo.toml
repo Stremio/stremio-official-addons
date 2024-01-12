@@ -7,6 +7,7 @@ edition = "2018"
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/Stremio/stremio-official-addons"
+homepage = "https://stremio.com"
 include = [
     "/src/**/*.rs",
     "/Cargo.toml",

@@ -32,8 +32,11 @@ Besides changing this module, you have to update all it's dependant packages, mo
 To release a new version for v1 **npm** package you need to:
 
 1. Bump [`package.json`](./package.json)
+
 1.1. Make sure to update [`package-lock.json`](./package-lock.json):
+
 `npm i --package-lock-only`
+
 2. Make a new tag
 
 `git tag -a v1.XX.XX -m "Tag for releases v1.XX.XX"`
@@ -52,11 +55,13 @@ To release a new version for v1 **npm** package you need to:
 
 To release a new version for v2 **npm** and **crate** packages you need to:
 1. Bump [`official-addons-v2/package.json`](./official-addons-v2/package.json)
+
 1.1. Make sure to update [`package-lock.json`](./package-lock.json):
 
 `npm i --package-lock-only`
 
 2. Bump [`official-addons-v2/Cargo.toml`](./official-addons-v2/Cargo.toml)
+
 2.1. Make sure to update [`Cargo.lock`](./Cargo.lock):
 
 `cargo update -p stremio-official-addons`

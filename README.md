@@ -37,17 +37,20 @@ To release a new version for v1 **npm** package you need to:
 
 `npm i --package-lock-only`
 
-2. Make a new tag
+2. Commit and push the changes to the `master` branch 
+**A PR is encouraged to double check if all files have been properly updated**
+
+3. Make a new tag
 
 `git tag -a v1.XX.XX -m "Tag for releases v1.XX.XX"`
 
-3. Push it to the repo
+4. Push it to the repo
 
 `git push -u origin v1.XX.XX`
 
-4. Create a [new release](https://github.com/Stremio/stremio-official-addons/releases) using the version as a title, e.g. `v1.5.6` and automatically generate changes from previous tag.
+5. Create a [new release](https://github.com/Stremio/stremio-official-addons/releases) using the version as a title, e.g. `v1.5.6` and automatically generate changes from previous tag.
 
-5. The [`publish` workflow](./.github/workflows/publish.yml) will run the `v1` job and will:
+6. The [`publish` workflow](./.github/workflows/publish.yml) will run the `v1` job and will:
    1. Build [`stremio-official-addons@1`][v1-npm-link] package
    2. Publish the [package on npm][v1-npm-link]
 
@@ -66,15 +69,18 @@ To release a new version for v2 **npm** and **crate** packages you need to:
 
 `cargo update -p stremio-official-addons`
 
-3. Make a new tag
+3. Commit and push the changes to the `master` branch 
+**A PR is encouraged to double check if all files have been properly updated**
+
+4. Make a new tag
 
 `git tag -a v2.XX.XX -m "Tag for releases v2.XX.XX"`
 
-4. Push it to the repo
+5. Push it to the repo
 
 `git push -u origin v2.XX.XX`
 
-5. Create a [new release](https://github.com/Stremio/stremio-official-addons/releases) using the version as a title, e.g. `v2.0.12` and automatically generate changes from previous tag.
+6. Create a [new release](https://github.com/Stremio/stremio-official-addons/releases) using the version as a title, e.g. `v2.0.12` and automatically generate changes from previous tag.
 
 6. The [`publish` workflow](./.github/workflows/publish.yml) will run the `v2` job and will:
    1. Build [`@stremio/stremio-official-addons@2`][v2-npm-link] package

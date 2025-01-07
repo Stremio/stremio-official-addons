@@ -2,7 +2,7 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "version": "3.0.11",
+            "version": "3.0.12",
             "description": "The official addon for movie and series catalogs",
             "name": "Cinemeta",
             "resources": [
@@ -211,6 +211,7 @@
                     "type": "movie",
                     "id": "year",
                     "genres": [
+                        "2025",
                         "2024",
                         "2023",
                         "2022",
@@ -321,6 +322,7 @@
                         {
                             "name": "genre",
                             "options": [
+                                "2025",
                                 "2024",
                                 "2023",
                                 "2022",
@@ -446,6 +448,7 @@
                     "type": "series",
                     "id": "year",
                     "genres": [
+                        "2025",
                         "2024",
                         "2023",
                         "2022",
@@ -516,6 +519,7 @@
                         {
                             "name": "genre",
                             "options": [
+                                "2025",
                                 "2024",
                                 "2023",
                                 "2022",
@@ -738,6 +742,24 @@
                         "lastVideosIds"
                     ],
                     "name": "Last videos"
+                },
+                {
+                    "type": "series",
+                    "id": "calendar-videos",
+                    "extra": [
+                        {
+                            "name": "calendarVideosIds",
+                            "isRequired": true,
+                            "optionsLimit": 100
+                        }
+                    ],
+                    "extraSupported": [
+                        "calendarVideosIds"
+                    ],
+                    "extraRequired": [
+                        "calendarVideosIds"
+                    ],
+                    "name": "Calendar videos"
                 }
             ],
             "behaviorHints": {

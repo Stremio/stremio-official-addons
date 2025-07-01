@@ -1,0 +1,14 @@
+[package]
+name = "flate_macro"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = { version = "1.*" }
+syn = { version = "2.*" }
+proc-macro2 = { version = "1.*" }
+flate2 = { version = "1.*", features = ["rust_backend"] }

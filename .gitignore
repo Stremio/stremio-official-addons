@@ -1,3 +1,4 @@
 **/addons.json
 /node_modules
 **/target
+.DS_Store

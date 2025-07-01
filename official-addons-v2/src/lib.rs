@@ -32,13 +32,12 @@ mod test {
     #[test]
     #[cfg(feature = "deflate")]
     fn addons_file_is_valid_json_with_deflate() {
-        let data = get_addons_string();
+        let data = decompress!("addons.json");
         let addons_json: Value = serde_json::from_slice(&data).expect("Valid JSON with deflate");
         assert_ne!(addons_json, serde_json::Value::Null);
     }
 
     #[test]
-    #[cfg(not(feature = "deflate"))]
     fn addons_file_is_valid_json_without_deflate() {
         let data = include_bytes!("../addons.json");
         let addons_json: Value = serde_json::from_slice(data).expect("Valid JSON with deflate");

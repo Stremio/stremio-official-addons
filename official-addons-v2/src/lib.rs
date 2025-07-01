@@ -11,7 +11,7 @@ pub fn get_addons_string() -> Cow<'static, [u8]> {
     return Cow::Borrowed(ADDONS);
 
     #[cfg(feature = "deflate")]
-    return Cow::Owned(decompress!("addons.json"));
+    return Cow::Owned(decompress!("addons.json")); // decompress uses relative path to current sub-project's root
 }
 // todo: parsed addons manifests
 

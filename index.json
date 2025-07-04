@@ -2,7 +2,7 @@
     {
         "manifest": {
             "id": "com.linvo.cinemeta",
-            "version": "3.0.12",
+            "version": "3.0.13",
             "description": "The official addon for movie and series catalogs",
             "name": "Cinemeta",
             "resources": [

@@ -1,4 +1,2 @@
 [workspace]
-members = [
-    "official-addons-v2",
-]
+members = ["flate_macro", "official-addons-v2"]

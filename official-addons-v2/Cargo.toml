@@ -8,21 +8,17 @@ license = "MIT"
 readme = "README.md"
 repository = "https://github.com/Stremio/stremio-official-addons"
 homepage = "https://stremio.com"
-include = [
-    "/src/**/*.rs",
-    "/Cargo.toml",
-    "/addons.json",
-    "/README.md"
-]
+include = ["/src/**/*.rs", "/Cargo.toml", "/addons.json", "/README.md"]
 
 [features]
-
-default = ["json", "std"]
-std = ["serde_json/std", "once_cell/std"]
-
-json = ["serde_json", "once_cell"]
+default = []
+deflate = ["flate_macro", "flate2"]
 
 [dependencies]
+flate2 = { version = "1.*", optional = true, default-features = false, features = [
+	"rust_backend",
+] }
+flate_macro = { path = "../flate_macro", optional = true, default-features = false }
 
-serde_json = { version = "1", optional = true, default-features = false }
-once_cell = { version = "1", optional = true, default-features = false }
+[dev-dependencies]
+serde_json = "1.0"

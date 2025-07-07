@@ -2,7 +2,7 @@
 use deflate_macro::decompress;
 use std::borrow::Cow;
 
-pub static ADDONS: once_cell::sync::Lazy<Cow<'static, [u8]>> = once_cell::sync::Lazy::new(|| {
+pub fn get_addons_string() -> Cow<'static, [u8]> {
     #[cfg(not(feature = "deflate"))]
     let addons = Cow::Borrowed(include_bytes!("../addons.json").as_slice());
 
@@ -10,7 +10,7 @@ pub static ADDONS: once_cell::sync::Lazy<Cow<'static, [u8]>> = once_cell::sync::
     let addons = Cow::Owned(decompress!("addons.json"));
 
     addons
-});
+}
 
 #[cfg(test)]
 mod test {
@@ -21,7 +21,7 @@ mod test {
     #[test]
     fn addons_file_is_valid_json() {
         let addons_json: Value =
-            serde_json::from_slice(&*ADDONS).expect("Could not decode");
+            serde_json::from_slice(&get_addons_string()).expect("Could not decode");
 
         assert_ne!(addons_json, serde_json::Value::Null);
     }

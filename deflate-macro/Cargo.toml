@@ -5,6 +5,7 @@ authors = ["Smart Code OOD"]
 edition = "2021"
 description = "A macro for using encoded value in binary but decompress on runtime"
 
+repository = "https://github.com/Stremio/stremio-official-addons"
 license = "MIT"
 
 [lib]

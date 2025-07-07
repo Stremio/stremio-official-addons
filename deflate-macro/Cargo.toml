@@ -3,6 +3,7 @@ name = "deflate-macro"
 version = "0.1.0"
 authors = ["Smart Code OOD"]
 edition = "2021"
+description = "A macro for using encoded value in binary but decompress on runtime"
 
 license = "MIT"
 

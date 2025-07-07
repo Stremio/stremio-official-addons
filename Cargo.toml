@@ -1,2 +1,3 @@
 [workspace]
-members = ["flate_macro", "official-addons-v2"]
+resolver = "2"
+members = ["deflate-macro", "official-addons-v2"]

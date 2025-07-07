@@ -12,13 +12,13 @@ include = ["/src/**/*.rs", "/Cargo.toml", "/addons.json", "/README.md"]
 
 [features]
 default = []
-deflate = ["flate_macro", "flate2"]
+deflate = ["dep:deflate-macro", "dep:flate2"]
 
 [dependencies]
-flate2 = { version = "1.*", optional = true, default-features = false, features = [
-	"rust_backend",
-] }
-flate_macro = { path = "../flate_macro", optional = true, default-features = false }
+flate2 = { version = "1", optional = true, default-features = false, features = ["rust_backend"] }
+deflate-macro = { version = "0.1", optional = true, path = "../deflate-macro" }
+
+once_cell = "1"
 
 [dev-dependencies]
 serde_json = "1.0"

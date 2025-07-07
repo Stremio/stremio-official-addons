@@ -24,6 +24,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "deflate-macro"
+version = "0.1.0"
+dependencies = [
+ "flate2",
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "flate2"
 version = "1.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -31,16 +41,6 @@ checksum = "4a3d7db9596fecd151c5f638c0ee5d5bd487b6e0ea232e5dc96d5250f6f94b1d"
 dependencies = [
  "crc32fast",
  "miniz_oxide",
-]
-
-[[package]]
-name = "flate_macro"
-version = "0.1.0"
-dependencies = [
- "flate2",
- "proc-macro2",
- "quote",
- "syn",
 ]
 
 [[package]]
@@ -57,6 +57,12 @@ checksum = "1fa76a2c86f704bdb222d66965fb3d63269ce38518b83cb0575fca855ebb6316"
 dependencies = [
  "adler2",
 ]
+
+[[package]]
+name = "once_cell"
+version = "1.21.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "42f5e15c9953c5e4ccceeb2e7382a716482c34515315f7b03532b8b4e8393d2d"
 
 [[package]]
 name = "proc-macro2"
@@ -117,8 +123,9 @@ dependencies = [
 name = "stremio-official-addons"
 version = "2.1.0"
 dependencies = [
+ "deflate-macro",
  "flate2",
- "flate_macro",
+ "once_cell",
  "serde_json",
 ]
 

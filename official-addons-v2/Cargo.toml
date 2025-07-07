@@ -1,9 +1,9 @@
 [package]
 name = "stremio-official-addons"
 description = "All of the stremio official addons"
-version = "2.1.0"
+version = "2.1.1"
 authors = ["Smart Code OOD"]
-edition = "2018"
+edition = "2021"
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/Stremio/stremio-official-addons"

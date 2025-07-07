@@ -23,7 +23,7 @@
   "homepage": "https://stremio.com",
   "devDependencies": {
     "stremio-addon-client": "^1.5.2",
-    "stremio-local-addon": "https://git@github.com/Stremio/stremio-local-addon#79cd88c32aa26270af8b662fa7bd92b657f6e14f"
+    "stremio-local-addon": "git+https://git@github.com/Stremio/stremio-local-addon.git#79cd88c32aa26270af8b662fa7bd92b657f6e14f"
   },
   "workspaces": [
     ".",

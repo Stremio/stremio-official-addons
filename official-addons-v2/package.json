@@ -1,6 +1,6 @@
 {
     "name": "@stremio/stremio-official-addons",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "All of the stremio official addons",
     "homepage": "https://stremio.com",
     "author": "Smart Code OOD",
@@ -22,6 +22,6 @@
         "@stremio/stremio-core-validator": "2.0.2",
         "node-fetch": "2.6.7",
         "stremio-addon-client": "1.16.1",
-        "stremio-local-addon": "https://git@github.com/Stremio/stremio-local-addon#79cd88c32aa26270af8b662fa7bd92b657f6e14f"
+        "stremio-local-addon": "git+https://git@github.com/Stremio/stremio-local-addon.git#79cd88c32aa26270af8b662fa7bd92b657f6e14f"
     }
 }

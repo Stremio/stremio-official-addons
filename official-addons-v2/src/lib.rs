@@ -1,19 +1,16 @@
 #[cfg(feature = "deflate")]
-use flate_macro::decompress;
+use deflate_macro::decompress;
 use std::borrow::Cow;
-
-/// The JSON file's content
-#[cfg(not(feature = "deflate"))]
-const ADDONS: &'static [u8] = include_bytes!("../addons.json");
 
 pub fn get_addons_string() -> Cow<'static, [u8]> {
     #[cfg(not(feature = "deflate"))]
-    return Cow::Borrowed(ADDONS);
+    let addons = Cow::Borrowed(include_bytes!("../addons.json").as_slice());
 
     #[cfg(feature = "deflate")]
-    return Cow::Owned(decompress!("addons.json")); // decompress uses relative path to current sub-project's root
+    let addons = Cow::Owned(decompress!("addons.json"));
+
+    addons
 }
-// todo: parsed addons manifests
 
 #[cfg(test)]
 mod test {

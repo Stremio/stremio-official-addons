@@ -1,9 +1,9 @@
 [package]
 name = "stremio-official-addons"
 description = "All of the stremio official addons"
-version = "2.1.0"
+version = "2.1.1"
 authors = ["Smart Code OOD"]
-edition = "2018"
+edition = "2021"
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/Stremio/stremio-official-addons"
@@ -12,13 +12,11 @@ include = ["/src/**/*.rs", "/Cargo.toml", "/addons.json", "/README.md"]
 
 [features]
 default = []
-deflate = ["flate_macro", "flate2"]
+deflate = ["dep:deflate-macro", "dep:flate2"]
 
 [dependencies]
-flate2 = { version = "1.*", optional = true, default-features = false, features = [
-	"rust_backend",
-] }
-flate_macro = { path = "../flate_macro", optional = true, default-features = false }
+flate2 = { version = "1", optional = true, default-features = false, features = ["rust_backend"] }
+deflate-macro = { version = "0.1", optional = true, path = "../deflate-macro" }
 
 [dev-dependencies]
 serde_json = "1.0"

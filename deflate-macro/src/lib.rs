@@ -1,8 +1,24 @@
-use flate2::write::GzEncoder;
-use flate2::Compression;
+//!
+//!
+//! ## How to use:
+//!
+//! In `Cargo.toml`:
+//! ```toml
+//! [dependencies]
+//! flate2 = { version = "1", default-features = false, features = ["rust_backend"] }
+//! deflate-macro = "0.1"
+//! ```
+//!
+//! ```text
+//! /// Path relative to the cargo crate
+//! pub static COMPILE_TIME_COMPRESSED_RUNTIME_DECOMPRESSED: String = deflate_macro::decompress!("addons.json");
+//! ```
+//!
+use std::io::Write;
+
+use flate2::{write::GzEncoder, Compression};
 use proc_macro::TokenStream;
 use quote::quote;
-use std::io::Write;
 use syn::{parse_macro_input, LitStr};
 
 /// Returns decompressed bytes as temporary value (no caching)

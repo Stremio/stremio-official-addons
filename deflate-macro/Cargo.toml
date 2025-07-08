@@ -1,0 +1,18 @@
+[package]
+name = "deflate-macro"
+version = "0.1.0"
+authors = ["Smart Code OOD"]
+edition = "2021"
+description = "A macro for using encoded value in binary but decompress on runtime"
+
+repository = "https://github.com/Stremio/stremio-official-addons"
+license = "MIT"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+syn = "2"
+proc-macro2 = "1"
+flate2 = { version = "1", features = ["rust_backend"] }

@@ -21,6 +21,8 @@ jobs:
         node-version: 20
         cache: 'npm'
         registry-url: https://registry.npmjs.org/
+    - name: Install NPM latest
+      run: npm install -g npm@latest
     - name: Install NPM dependencies
       run: npm ci
     # At this point, the index.json is manually updated and committed for v1
@@ -43,6 +45,8 @@ jobs:
         registry-url: https://registry.npmjs.org/
     - name: Rust setup (1.61)
       uses: dtolnay/rust-toolchain@1.61
+    - name: Install NPM latest
+      run: npm install -g npm@latest
     - name: Install NPM dependencies
       run: npm ci
     - name: Build addons list

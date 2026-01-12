@@ -4,6 +4,10 @@ on:
   release:
     types: [published]
 
+permissions:
+  id-token: write  # Required for OIDC
+  contents: read
+
 jobs:
   publish-v1:
     if: ${{ startsWith(github.event.release.tag_name, 'v1') }}
@@ -23,8 +27,7 @@ jobs:
     # No need to generate the addons list
     - name: Publish to NPM
       run: npm publish --workspace stremio-official-addons --access public
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+
 
   publish-v2:
     if: ${{ startsWith(github.event.release.tag_name, 'v2') }}
@@ -46,8 +49,6 @@ jobs:
       run: npm run --workspace official-addons-v2 build
     - name: Publish to NPM
       run: npm publish --workspace official-addons-v2 --access public
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
     - name: Build and publish crate to crates.io
       run: cargo publish -p stremio-official-addons --allow-dirty --token "$CARGO_AUTH_TOKEN"
       env:
